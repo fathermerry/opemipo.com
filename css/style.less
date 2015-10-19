@@ -10,6 +10,8 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+    max-width: 100%;
 }
 
 *,
@@ -252,10 +254,10 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    bottom: 0;
+    right: 0;
     z-index: -1;
     opacity: 0;
-    width: 100%;
-    height: 100%;
     transition: 1s;
     -webkit-transition: 1s;
     background: #044A6D;
@@ -421,11 +423,13 @@ body {
 
 .portfolio {
     position: absolute;
-    margin: 30px 0 0 -20px;
+    margin: 30px 0 0;
     width: 1000px;
     background: white;
     padding: 20px 50px 70px;
     color: #333;
+    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
     @media @mobile {
         width: ~"calc(100% + 20px)";
         padding: 10px 20px;
