@@ -80,6 +80,28 @@ ul {
     font-size: ~"@{remValue}rem";
 }
 
+.box-shadow(@x: 0,
+@y: 0,
+@blur: 3px,
+@color: rgba(0, 0, 0, 0.3)) {
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    -ms-box-shadow: @arguments;
+    -o-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
+
+.gradient(@color: #F5F5F5,
+@start: #EEE,
+@stop: #FFF) {
+    background: @color;
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
+    background: -ms-linear-gradient(bottom, @start, @stop);
+    background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
+    background: -o-linear-gradient(@stop, @start);
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", @stop, @start));
+}
+
 .disabled {
     pointer-events: none;
     opacity: 0.5;
@@ -354,9 +376,10 @@ body {
 }
 
 .byline {
-    margin: 100px 0 0;
     padding: 0;
     max-width: 700px;
+    min-height: 35px;
+    clear: both;
     .text {
         display: block;
     }

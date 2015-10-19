@@ -2,6 +2,8 @@ $(function() {
     var current_state;
     var animation_played;
     var state = location.hash.slice(1);
+    var timeouts = [];
+    var show_content;
     set_state_to(state);
 
     // Watch for changes
@@ -31,24 +33,35 @@ $(function() {
     function play_content(options) {
         $('.content').removeClass('visible');
         var messages = {
-            introduction: ["Hello. ^500 I'm a 23 year old Nigerian living in Lagos. ^500 I make things on the web for a living"],
-            work: ["I'd call myself a full stack designer. ^500 But I'm not sure I even know what that means"],
-            person: ["Simple guy. ^500 Aspiring eccentric"]
+            introduction: "Hello. I'm a 23 year old Nigerian living in Lagos. I make things on the web for a living",
+            work: "I'd call myself a full stack designer. But I'm not sure I even know what that means",
+            person: "Simple guy. Aspiring eccentric"
         }
 
         if (options.reset) {
-            $(".byline .text").data('typed').pauseTyping();
-            $(".byline .text").removeData('typed');
+            for (var i = 0; i < timeouts.length; i++) {
+                clearTimeout(timeouts[i]);
+            }
+            clearTimeout(show_content);
+            $('.byline').html("");
         }
 
-        $(".byline .text").typed({
-            strings: messages[state],
-            callback: function() {
-                $('.byline .typed-cursor').remove();
-                var container = "#" + state + "-content";
-                $(container).addClass('visible');
-            }
+        var text = messages[state];
+        var delay_next;
+        var delay_time = 0;
+
+        $.each(text.split(''), function(i, letter) {
+            delay_time = delay_next ? delay_time + 500 : delay_time + 50;
+            delay_next = letter == '.';
+            timeouts.push(setTimeout(function() {
+                $('.byline').html($('.byline').html() + letter);
+            }, delay_time));
         });
+
+        show_content = setTimeout(function() {
+            var container = "#" + state + "-content";
+            $(container).addClass('visible');
+        }, delay_time);
     }
 
     // Parallax for sample images
