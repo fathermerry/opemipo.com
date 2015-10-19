@@ -256,26 +256,27 @@ body {
     opacity: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(90deg, rgb(52, 73, 94) 25%, rgb(44, 62, 80) 100%);
-    background-image: -moz-linear-gradient(left, rgb(52, 73, 94) 25%, rgb(44, 62, 80) 100%);
-    background-image: -webkit-linear-gradient(left, rgb(52, 73, 94) 25%, rgb(44, 62, 80) 100%);
-    background-image: -o-linear-gradient(left, rgb(52, 73, 94) 25%, rgb(44, 62, 80) 100%);
-    background-image: -ms-linear-gradient(left, rgb(52, 73, 94) 25%, rgb(44, 62, 80) 100%);
     transition: 1s;
     -webkit-transition: 1s;
+    background: #044A6D;
+    background-image: linear-gradient(0deg, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
+    background-image: -moz-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
+    background-image: -webkit-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
+    background-image: -o-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
+    background-image: -ms-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
     &.bg-work {
-        background-image: linear-gradient(90deg, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-        background-image: -moz-linear-gradient(left, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-        background-image: -webkit-linear-gradient(left, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-        background-image: -o-linear-gradient(left, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-        background-image: -ms-linear-gradient(left, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+        background-image: linear-gradient(0deg, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+        background-image: -moz-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+        background-image: -webkit-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+        background-image: -o-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+        background-image: -ms-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
     }
-    &.bg-writing {
-        background-image: linear-gradient(90deg, rgb(157, 4, 4) 25%, rgb(127, 0, 0) 100%);
-        background-image: -moz-linear-gradient(left, rgb(157, 4, 4) 25%, rgb(127, 0, 0) 100%);
-        background-image: -webkit-linear-gradient(left, rgb(157, 4, 4) 25%, rgb(127, 0, 0) 100%);
-        background-image: -o-linear-gradient(left, rgb(157, 4, 4) 25%, rgb(127, 0, 0) 100%);
-        background-image: -ms-linear-gradient(left, rgb(157, 4, 4) 25%, rgb(127, 0, 0) 100%);
+    &.bg-person {
+        background-image: linear-gradient(0deg, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
+        background-image: -moz-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
+        background-image: -webkit-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
+        background-image: -o-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
+        background-image: -ms-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
     }
     &.visible {
         opacity: 1;
@@ -393,10 +394,11 @@ body {
             text-decoration: underline;
         }
     }
-    &.muted {
-        a {
-            color: rgb(255, 137, 142);
-        }
+}
+
+.muted {
+    a {
+        color: rgb(255, 137, 142);
     }
 }
 
@@ -422,7 +424,7 @@ body {
     margin: 30px 0 0 -20px;
     width: 1000px;
     background: white;
-    padding: 20px 50px;
+    padding: 20px 50px 70px;
     color: #333;
     @media @mobile {
         width: ~"calc(100% + 20px)";

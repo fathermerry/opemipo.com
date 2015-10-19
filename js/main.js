@@ -32,7 +32,7 @@ $(function() {
         var messages = {
             introduction: ["Hello. ^500 I'm a 23 year old Nigerian living in Lagos. ^500 I make things on the web for a living"],
             work: ["I'd call myself a full stack designer. ^500 But I'm not sure I even know what that means"],
-            person: ["Sometimes, I write about the interesting things I deal with. ^500 And sometimes, people read"]
+            person: ["Simple guy. ^500 Aspiring eccentric"]
         }
 
         if (options.reset) {
