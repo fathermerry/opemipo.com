@@ -15,9 +15,10 @@ $(function() {
         state = states.indexOf(new_state) <= -1 ? "introduction" : new_state;
 
         if (state != current_state) {
-            $('body').removeClass().addClass(new_state);
+            $('.bg').removeClass('visible');
+            $('#bg-' + state).addClass('visible');
             $('.menu ul li').removeClass('active');
-            $('.menu ul li[data-menu="' + new_state + '"]').addClass('active');
+            $('.menu ul li[data-menu="' + state + '"]').addClass('active');
             current_state = state;
             play_content({
                 reset: animation_played
@@ -35,11 +36,11 @@ $(function() {
         }
 
         if (options.reset) {
-            $(".byline h1").data('typed').pauseTyping();
-            $(".byline h1").removeData('typed');
+            $(".byline .text").data('typed').pauseTyping();
+            $(".byline .text").removeData('typed');
         }
 
-        $(".byline h1").typed({
+        $(".byline .text").typed({
             strings: messages[state],
             callback: function() {
                 $('.byline .typed-cursor').remove();
