@@ -15,6 +15,7 @@ $(function() {
         state = states.indexOf(new_state) <= -1 ? "introduction" : new_state;
 
         if (state != current_state) {
+            $('body').removeClass().addClass('bg-' + state);
             $('.bg').removeClass('visible');
             $('#bg-' + state).addClass('visible');
             $('.menu ul li').removeClass('active');

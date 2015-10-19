@@ -10,7 +10,6 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
-    width: 100%;
     max-width: 100%;
 }
 
@@ -79,28 +78,6 @@ ul {
     @remValue: (@pxValue/10);
     font-size: ~"@{pxValue}px";
     font-size: ~"@{remValue}rem";
-}
-
-.box-shadow(@x: 0,
-@y: 0,
-@blur: 3px,
-@color: rgba(0, 0, 0, 0.3)) {
-    -webkit-box-shadow: @arguments;
-    -moz-box-shadow: @arguments;
-    -ms-box-shadow: @arguments;
-    -o-box-shadow: @arguments;
-    box-shadow: @arguments;
-}
-
-.gradient(@color: #F5F5F5,
-@start: #EEE,
-@stop: #FFF) {
-    background: @color;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, @start), color-stop(1, @stop));
-    background: -ms-linear-gradient(bottom, @start, @stop);
-    background: -moz-linear-gradient(center bottom, @start 0%, @stop 100%);
-    background: -o-linear-gradient(@stop, @start);
-    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)", @stop, @start));
 }
 
 .disabled {
@@ -245,6 +222,12 @@ h3 {
 // Main Styles
 body {
     padding: 60px;
+    background: #044A6D;
+    background-image: linear-gradient(0deg, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
+    background-image: -moz-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
+    background-image: -webkit-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
+    background-image: -o-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
+    background-image: -ms-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
     @media @mobile {
         padding: 20px 10px 50px;
     }
@@ -266,23 +249,25 @@ body {
     background-image: -webkit-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
     background-image: -o-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
     background-image: -ms-linear-gradient(top, rgb(0, 50, 76) 25%, rgb(0, 58, 88) 100%);
-    &.bg-work {
-        background-image: linear-gradient(0deg, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-        background-image: -moz-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-        background-image: -webkit-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-        background-image: -o-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-        background-image: -ms-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
-    }
-    &.bg-person {
-        background-image: linear-gradient(0deg, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
-        background-image: -moz-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
-        background-image: -webkit-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
-        background-image: -o-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
-        background-image: -ms-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
-    }
     &.visible {
         opacity: 1;
     }
+}
+
+.bg-work {
+    background-image: linear-gradient(0deg, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+    background-image: -moz-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+    background-image: -webkit-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+    background-image: -o-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+    background-image: -ms-linear-gradient(top, rgb(155, 89, 182) 25%, rgb(142, 68, 173) 100%);
+}
+
+.bg-person {
+    background-image: linear-gradient(0deg, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
+    background-image: -moz-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
+    background-image: -webkit-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
+    background-image: -o-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
+    background-image: -ms-linear-gradient(top, rgb(0, 84, 127) 25%, rgb(5, 70, 103) 100%);
 }
 
 .frame {
