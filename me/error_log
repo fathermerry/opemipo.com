@@ -1,9 +1,0 @@
-[05-Jan-2014 19:45:17 Africa/Lagos] PHP Parse error:  syntax error, unexpected '_blank' (T_STRING), expecting ',' or ';' in /home/themerry/public_html/redesign/api.php on line 37
-[05-Jan-2014 19:45:57 Africa/Lagos] PHP Parse error:  syntax error, unexpected '_blank' (T_STRING), expecting ',' or ';' in /home/themerry/public_html/redesign/api.php on line 37
-[05-Jan-2014 19:46:05 Africa/Lagos] PHP Parse error:  syntax error, unexpected '_blank' (T_STRING), expecting ',' or ';' in /home/themerry/public_html/redesign/api.php on line 37
-[24-Mar-2014 07:52:58 Africa/Lagos] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/themerry/public_html/api.php on line 20
-[24-Mar-2014 07:52:58 Africa/Lagos] PHP Warning:  file_get_contents(https://getpocket.com/v3/get?count=1): failed to open stream: no suitable wrapper could be found in /home/themerry/public_html/api.php on line 20
-[24-Mar-2014 07:52:58 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/themerry/public_html/api.php on line 26
-[24-Mar-2014 10:48:32 Africa/Lagos] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/themerry/public_html/api.php on line 20
-[24-Mar-2014 10:48:32 Africa/Lagos] PHP Warning:  file_get_contents(https://getpocket.com/v3/get?count=1): failed to open stream: no suitable wrapper could be found in /home/themerry/public_html/api.php on line 20
-[24-Mar-2014 10:48:32 Africa/Lagos] PHP Warning:  Invalid argument supplied for foreach() in /home/themerry/public_html/api.php on line 26

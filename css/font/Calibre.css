@@ -1,0 +1,15 @@
+/* Webfont: Calibre-Regular */
+
+@font-face {
+    font-family: 'CalibreRegular';
+    src: url('Calibre-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('Calibre-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Calibre-Regular.woff') format('woff'), /* Modern Browsers */
+    url('Calibre-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('Calibre-Regular.svg#Calibre-Regular') format('svg');
+    /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
