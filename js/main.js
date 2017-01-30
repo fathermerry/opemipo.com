@@ -33,8 +33,8 @@ $(function() {
     function play_content(options) {
         $('.content').removeClass('visible');
         var messages = {
-            introduction: "Hello. I'm a 23 year old Nigerian living in Lagos. I make things on the web for a living",
-            work: "I'd call myself a full stack designer. But I'm not sure I even know what that means",
+            introduction: "Hi. I'm a 24 year old Nigerian that makes things on the web for a living",
+            work: "I'd call myself a full stack designer, but I'm not sure I even know what that means",
             person: "Simple guy. Aspiring eccentric"
         }
 
