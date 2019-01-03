@@ -1,1 +1,8 @@
-<footer></footer>
+<footer>
+  {{ site.data.about.email }}
+  {% assign currentRead = site.data.books[0] %}
+  {{ currentRead.name }}
+  {{ currentRead.url }}
+  {% assign currentLocation = site.data.location[0] %}
+  {{ currentLocation.name }}
+</footer>

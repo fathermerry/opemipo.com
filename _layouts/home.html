@@ -5,8 +5,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{site.title}}</title>
-  <meta name="description" content="{{site.bio}}">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="stylesheet" href="css/normalize.css">
@@ -17,9 +17,14 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  {% include header.html %}
   <main>
-    {{ content }}
+    {% include intro.html %}
+    {% include journal.html %}
+    {% include work.html %}
+    {% include currently-digging.html %}
   </main>
+  {% include footer.html %}
 </body>
 
 </html>

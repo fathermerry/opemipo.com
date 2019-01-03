@@ -1,0 +1,8 @@
+<section>
+  {% for post in site.data.work offset:1 %}
+    {{ post.title }}
+    {{ post.url }}
+    {{ post.source }}
+    {{ post.date }}
+  {% endfor %}
+</section>

@@ -1,1 +1,5 @@
-<section></section>
+<section>
+  {% for site in site.data.publications %}
+    {{ site.name }} {{ site.description }} {{ site.url }}
+  {% endfor %}
+</section>

@@ -1,3 +1,6 @@
+- name: Email
+  url: mailto:opemipoaikomo@gmail.com
+  
 - name: Twitter
   url: https://twitter.com/fathermerry
 

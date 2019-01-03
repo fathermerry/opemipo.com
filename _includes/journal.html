@@ -1,1 +1,5 @@
-<section></section>
+<section>
+  {% assign latestPost = site.data.journal[0] %}
+  {{ latestPost.title }}
+  {{ latestPost.url }}
+</section>

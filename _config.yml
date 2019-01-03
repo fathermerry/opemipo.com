@@ -14,15 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Opemipo Aikomo
-firstName: Opemipo
-lastName: Aikomo
-yearOfBirth: 1992
-nationality: Nigerian
-email: opemipoaikomo@gmail.com
-bio: >- # this means to ignore newlines until "baseurl:"
-  I design software for a living and this website is a curation of all the content I create. You'll find links to my work, web experiments, writing, and general interests here.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+description: >- 
+  I'm Opemipo Aikomo and this website is a curation of all the writing and design work that I do.
+baseurl: / # the subpath of your site, e.g. /blog
+url: https://opemipo.com
+
+# Wuruwuru
+wuruwuruTitle: Wuruwuru
+wuruwuruDescription: Thoughts on design, case studies of personal projects, and hopefully interesting visual essays.
+wuruwuruUrl: https://wuruwuru.com
 
 # Build settings
 markdown: kramdown
