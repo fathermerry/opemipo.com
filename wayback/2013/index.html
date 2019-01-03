@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="style.css" rel="stylesheet" />
+<link href="ani.css" rel="stylesheet" />
+<link href="normalize.css" rel="stylesheet" />
+<title>Aikomo Onaopemipo</title>
+
+<script src="jquery-1.8.3.min.js"></script>
+<script>
+$(document).ready(function () {
+
+$('.work').click(function(){
+        $('.work').addClass('active');
+        $('.layer').addClass('move-right');
+        $('.callout').addClass('close');
+    })
+
+$('.plus').click(function(){
+    $('.plus').toggleClass('active');
+    $(this).closest('.details').toggleClass('full');
+})
+
+$('.contact').click(function(){
+    $('.get-in-touch').slideToggle('fast');
+})
+
+$('.close-box').click(function(){
+    $('.get-in-touch').slideToggle('fast');
+
+})
+
+});
+    
+</script>
+
+</head>
+
+<body>
+
+<div class="main container">
+
+<div class="callout">
+    <h1>Hello. My name is Opemipo and I'm an interface designer.  </h1> 
+    <a class="work trans">See work</a>
+    <a class="contact trans">Get in touch</a>
+</div>
+
+
+<div class="get-in-touch">
+
+    <div class="boxed">
+        <a class="close-box trans">Close</a><br>        
+        Call or whatsapp me on 07087212710, or email me at <a href="mailto:opemipoaikomo@gmail.com">opemipoaikomo@gmail.com</a><br>
+        <div id="box">
+        <a target="_blank" href="http://www.behance.net/Themerrykid"><div class="social behance"></div></a>
+        <a target="_blank" href="http://www.facebook.com/aikomo"><div class="social facebook"></div></a>
+        <a target="_blank" href="http://twitter.com/FatherMerry"><div class="social twitter"></div></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="layer">
+    <div class="content">
+    <h1>I design websites and app interfaces. </h1>
+    <p class="message">I use photoshop or fireworks, and can translate my designs to  html/css. A few of my previous/ongoing jobs are featured here and I strongly recommend you view the prototypes and use a web browser. Some of the projects aren't available to mobile.</p>
+
+    <div class="prototype web-only">
+        <div class="image">
+            <ul class="stage">
+                <li><img src="bp/img1.jpg"></li>
+                <li><img src="bp/img2.jpg"></li>
+                <li><img src="bp/img3.jpg"></li>
+            </ul>
+        </div>
+        <div class="details right">
+            <span class="plus"></span>
+            <h3>Booshparrot app</h3>
+            <span class="tasks">Product&Brand Design/Coding</span>
+            <p>On a team to create a local social reading app, I was tasked with the <a href="#">designs for the android version</a> and the design and coding for the web app. It is still in development but you can view a prototype now.</p>
+            <a class="trans" target="_blank" href="https://googledrive.com/host/0B6BkSablOw2MdVN1S253OE85Rmc/index.html">View prototype</a>
+        </div>
+    </div>
+
+    <div class="prototype">
+            <div class="image right">
+            <ul class="stage">
+                <li><img src="gs/img1.jpg"></li>
+                <li><img src="gs/img2.jpg"></li>
+                <li><img src="gs/img3.jpg"></li>
+            </ul>
+        </div>
+        <div class="details">
+            <span class="plus"></span>
+            <h3>Getsong</h3>
+            <span class="tasks">Product Design/Coding/Responsive</span>
+            <p>I was toying with the idea of a music download app when I did this. It's pretty much static but could be used anyday if the need arrived. </p>
+            <a class="trans" target="_blank" href="http://themerrykid.com/getsong/">View prototype</a>
+        </div>
+    </div>
+
+    <div class="prototype">
+        <div class="image">
+            <img src="gs/bb.jpg">
+        </div>
+        <div class="details right">
+            <span class="plus"></span>
+            <h3>Experiment</h3>
+            <span class="tasks">Product Design/Coding</span>
+            <p>While improving my knowledge of css in early 2013, I decided to create a basketball using only code, no images. Well here it is, it bounces for your viewing pleasure.</p>
+            <a class="trans" target="_blank" href="http://themerrykid.com/experiment/">View prototype</a>
+        </div>
+    </div>
+
+        <div class="prototype">
+        <div class="image right">
+            <ul class="stage">
+                <li><img src="ab/img1.jpg"></li>
+                <li><img src="ab/img2.jpg"></li>
+                <li><img src="ab/img3.jpg"></li>
+            </ul>
+        </div>
+        <div class="details">
+            <span class="plus"></span>
+            <h3>Afrobios</h3>
+            <span class="tasks">Product Design/Coding/Responsive</span>
+            <p>I was asked to plan out the design and code a responsive biography web app for a client, Afrobios. I also ended up making the logos to be used in the mock ups.</p>
+            <a class="trans" target="_blank" href="https://googledrive.com/host/0B6BkSablOw2McEpXX1U1Vk1qSVU/index.html">View prototype</a>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+</body>
+</html>

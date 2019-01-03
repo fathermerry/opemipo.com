@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="assets/css/mainstyle.css" type="text/css" media="screen" />
+<title>Portfolio - The Merry Kid</title>
+
+<script src="assets/js/jquery-1.6.1.min.js" ></script>
+		<!--script src="js/jquery.lint.js" type="text/javascript" charset="utf-8"></script-->
+<link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<script src="assets/js/jquery.prettyPhoto.js" charset="utf-8"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+     $("a[rel^='prettyPhoto']").prettyPhoto({
+        theme: 'dark_rounded'
+    });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+	$('#content').fadeIn(3000); 
+});
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+	$(".dropbtn").click(function(){
+	  $("#dropbox").slideToggle("slow");
+	  $(this).toggleClass("active");
+	});
+	
+});
+</script>
+</head>
+
+<body>
+
+<div id="wrap">
+
+<img class="pointer" src="assets/images/point.png" />
+<div id="dropcontain">
+<a href="#" class="dropbtn"></a>
+<div id="dropbox">
+<h6>Profile</h6>
+<div id="profile"><img src="assets/images/profile.jpg"  /><p> phone: +234-7087-212710 </p>
+<p>email: hello@themerrykid.com  </p></div>
+		<h6>Send Me a Message</h6>
+		<form name="contact" method="post" action="contact.php">
+			<input type="text" placeholder="Your Name&#46;&#46;&#46;">
+			<input type="email" placeholder="Your Email&#46;&#46;&#46;">
+			<textarea placeholder="Your Message&#46;&#46;&#46;"></textarea>
+			<input type="submit" value="Send To Me &rarr;" class="dropsubmitbtn">
+		</form>
+<a href="print.html"><div id="box" class="social behance"></div></a>
+<a href="index.html"><div id="box" class="social facebook"></div></a>
+<a href="index.html"><div id="box" class="social google"></div></a>
+<a href="index.html"><div id="box" class="social linked"></div></a>
+<a href="print.html"><div id="box" class="social skype"></div></a>
+<a href="index.html"><div id="box" class="social twitter"></div></a>
+<a href="index.html"><div id="box" class="social vimeo"></div></a>
+</div>
+</div>
+
+<div id="navwrap">
+<div id="image" class="portfolio"></div>
+
+<div id="links">
+
+<ul class="nav">
+<li><a href="index.html">Welcome</a></li>
+<li><a class="active portfolio">Portfolio</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div id="contentwrap">
+<div id="content">
+<div id="portfolioimg"><a href="portfolio.html">Back to Portfolio Category</a></div>
+<p class="lead">I am currently planning a better web portfolio, since I recently moved to full interface designing. In the meanwhile, check out some work/experiments with the links below</p>
+<div class="links">
+<a href="bp/" target="_blank">News aggregator web interface (Initial draft)</a>
+<a href="experiment/" target="_blank">Pure CSS bouncing ball (no images)</a>
+<a href="fund/" target="_blank">Website for charity I run</a>
+<a href="anibrendan/" target="_blank">Illustrator website (Grid multiple sliders)</a>
+<a href="anibrendan/new.html" target="_blank"> Illustrator website (no sliders) </a>
+<a href="chris/" target="_blank">Simple copyrighter website</a>
+<a href="getsong/" target="_blank">Music download app interface (Responsive)</a>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
