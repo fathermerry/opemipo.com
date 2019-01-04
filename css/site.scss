@@ -2,5 +2,11 @@
 # Add front matter so Jekyll can build
 ---
 
-@import "resets";
+@import "global";
+@import "helpers";
+@import "print";
 @import "fonts";
+@import "grid";
+
+@import "components/title-block";
+@import "components/header";

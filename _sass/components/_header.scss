@@ -1,0 +1,7 @@
+.source-code-link {
+    padding: 15px;
+    text-align: right;
+    @media all and (max-width: 640px) {
+        display: none;
+    }
+}

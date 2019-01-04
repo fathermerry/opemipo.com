@@ -1,0 +1,11 @@
+.flex {
+	display: flex;
+	&__child {
+		&--fluid {
+			flex: 1;
+		}
+	}
+	@media all and (max-width: 640px) {
+		display: block;
+	}
+}

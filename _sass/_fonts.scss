@@ -1,38 +1,38 @@
-@font-face {
-    font-family: 'Founders Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-display: auto;
-    src: local('Founders Grotesk');
-    unicode-range: U+000-5FF;
-}
+// @font-face {
+//     font-family: 'Founders Grotesk';
+//     font-style: normal;
+//     font-weight: 400;
+//     font-display: auto;
+//     src: local('Founders Grotesk');
+//     unicode-range: U+000-5FF;
+// }
 
-@font-face {
-    font-family: 'Founders Grotesk';
-    font-style: bolder;
-    font-weight: 500;
-    font-display: auto;
-    src: local('Founders Grotesk');
-    unicode-range: U+000-5FF;
-}
+// @font-face {
+//     font-family: 'Founders Grotesk';
+//     font-style: bolder;
+//     font-weight: 500;
+//     font-display: auto;
+//     src: local('Founders Grotesk');
+//     unicode-range: U+000-5FF;
+// }
 
-@font-face {
-    font-family: 'Founders Grotesk';
-    font-style: bold;
-    font-weight: 700;
-    font-display: auto;
-    src: local('Founders Grotesk');
-    unicode-range: U+000-5FF;
-}
+// @font-face {
+//     font-family: 'Founders Grotesk';
+//     font-style: bold;
+//     font-weight: 700;
+//     font-display: auto;
+//     src: local('Founders Grotesk');
+//     unicode-range: U+000-5FF;
+// }
 
-@font-face {
-    font-family: 'Bianco Serif';
-    font-style: bold;
-    font-weight: 400;
-    font-display: auto;
-    src: local('Bianco Serif');
-    unicode-range: U+000-5FF;
-}
+// @font-face {
+//     font-family: 'Bianco Serif';
+//     font-style: bold;
+//     font-weight: 700;
+//     font-display: auto;
+//     src: local('Bianco Serif');
+//     unicode-range: U+000-5FF;
+// }
 
 .serif {
     font-family: 'Bianco Serif', serif;
@@ -61,4 +61,19 @@ h4 {
 
 h5 {
     font-size: 1.6rem;
+}
+
+b, strong {
+    font-weight: 500;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        color: #CF4A4A;
+        text-decoration: none;
+    }
+    &:focus, &:active {
+        text-decoration: underline;
+    }
 }
