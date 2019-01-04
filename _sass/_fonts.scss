@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Founders Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: local('Founders Grotesk');
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    font-style: bolder;
+    font-weight: 500;
+    font-display: auto;
+    src: local('Founders Grotesk');
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    font-style: bold;
+    font-weight: 700;
+    font-display: auto;
+    src: local('Founders Grotesk');
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'Bianco Serif';
+    font-style: bold;
+    font-weight: 400;
+    font-display: auto;
+    src: local('Bianco Serif');
+    unicode-range: U+000-5FF;
+}
+
+.serif {
+    font-family: 'Bianco Serif', serif;
+    letter-spacing: -0.07em;
+}
+
+p {
+    font-family: 'Founders Grotesk', sans-serif;
+}
+
+h1 {
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+}
