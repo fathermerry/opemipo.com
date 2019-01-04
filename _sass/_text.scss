@@ -84,3 +84,12 @@ a {
         text-decoration: underline;
     }
 }
+
+.common--text {
+    &-label {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 0;
+    }
+}

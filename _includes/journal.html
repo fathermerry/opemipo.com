@@ -1,5 +1,24 @@
-<section>
-  {% assign latestPost = site.data.journal[0] %}
-  {{ latestPost.title }}
-  {{ latestPost.url }}
+<section id="journal">
+  <div class="journal">
+    <div class="journal__introduction">
+      <figure class="journal__image">
+        <img src="/assets/images/journal.png" alt="Illustration of a journal">
+      </figure>
+      <div class="journal__about">
+        <p>I keep a blog where I write about my life and express my thoughts.</p>
+        <p><b><a href="https://medium.com/fathermerry">medium.com/fathermerry</a></b></p>
+      </div>
+    </div>
+    <div class="journal__recent">
+      <header>
+        <hr>
+        <h5 class="common--text-label">I most recently wrote</h5>
+      </header>
+      {% for post in site.data.journal %}
+      <article class="journal__post">
+        <p><b><a href="{{ post.url }}">{{ post.title }}</a></b></p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
 </section>
