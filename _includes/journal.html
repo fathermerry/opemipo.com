@@ -14,11 +14,10 @@
         <hr>
         <h5 class="common--text-label">I most recently wrote</h5>
       </header>
-      {% for post in site.data.journal %}
+      {% assign post = site.data.journal[0] %}
       <article class="journal__post">
         <p><b><a href="{{ post.url }}">{{ post.title }}</a></b></p>
       </article>
-      {% endfor %}
     </div>
   </div>
 </section>

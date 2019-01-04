@@ -1,0 +1,17 @@
+.footer-spacer {
+    height: 50px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
+    height: 100%;
+    p {
+        margin: 0;
+    }
+    &__email {
+        font-size: 2rem;
+    }
+}

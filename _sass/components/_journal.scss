@@ -34,8 +34,7 @@
         position: relative;
         @media all and (max-width: 640px) {
           img {
-            width: 120%;
-            max-width: none;
+            transform: translateX(25px);
           }
         }
     }

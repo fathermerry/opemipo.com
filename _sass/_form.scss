@@ -1,0 +1,47 @@
+.form {
+    &--inline {
+        display: flex;
+        @media all and (max-width: 640px) {
+            display: block;
+        }
+        textarea {
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            overflow: hidden;
+            resize: none;
+            height: 2rem;
+            padding: 0;
+        }
+        button {
+            padding: 0;
+            margin: 0;
+            // outline: none;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            font-weight: bolder;
+            background: none;
+            border: none;
+            float: right;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__entry {
+        .form--inline & {
+            flex: 1;
+        }
+    }
+    &__submit {
+        .form--inline & {
+            margin-left: 20px;
+            @media all and (max-width: 640px) {
+                padding-bottom: 15px;
+            }
+        }
+    } 
+}

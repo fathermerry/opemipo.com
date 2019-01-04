@@ -1,8 +1,41 @@
 <footer>
-  {{ site.data.about.email }}
-  {% assign currentRead = site.data.books[0] %}
-  {{ currentRead.name }}
-  {{ currentRead.url }}
-  {% assign currentLocation = site.data.location[0] %}
-  {{ currentLocation.name }}
+  <div class="footer-spacer"></div>
+  <div class="flex">
+    <div class="flex__child flex__child--fluid">
+      <div class="contact">
+        <p class="contact__label">To get in touch with me, email me at</p>
+        <p class="contact__email"><a href="mailto:{{ site.data.about.email }}">{{ site.data.about.email }}</a></p>
+      </div>
+    </div>
+    <div class="flex__child">
+      <div class="title-block title-block--bottom-right">
+        <div class="title-block-child title-block-child--horizontal">
+          <div class="title-block-child__label">
+            I'm Reading
+          </div>
+          <div class="title-block-child__value">
+            {% assign currentRead = site.data.books[0] %}
+            <a href="{{ currentRead.url }}" target="_blank"><b>{{ currentRead.name }}</b></a>
+          </div>
+        </div>
+        <div class="title-block-child title-block-child--horizontal">
+          <div class="title-block-child__label">
+            Currently In
+          </div>
+          <div class="title-block-child__value">
+            {% assign currentLocation = site.data.location[0] %}
+            <b>{{ currentLocation.name }}</b>
+          </div>
+        </div>
+        <div class="title-block-child title-block-child--stacked">
+          <div class="title-block-child__label">
+            Have something to share with me?
+          </div>
+          <div class="title-block-child__value">
+            {% include contact-form.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

@@ -1,0 +1,27 @@
+<form id="contact-form" class="form form--inline">
+    <div class="form__entry">
+        <textarea rows="1" id="message" placeholder="Hi Ope, this is Chisom. Listen to this playlist."></textarea>
+    </div>
+    <div class="form__submit">
+        <button id="submit" type="button">Send Email</button>
+    </div>
+</form>
+
+<script>
+    const textarea = document.getElementById('message');
+    textarea.addEventListener('input', function() {
+        setTimeout(() => { 
+            this.style.height = 'inherit';
+            this.style.height = `${this.scrollHeight}px`;
+        }, 0);
+    });
+
+    const button = document.getElementById('submit');
+    button.addEventListener('click', e => {
+        e.preventDefault();
+        if (!textarea.value) return;
+        const subject = 'New message from opemipo.com';
+        const body = textarea.value;
+        window.location.href = `mailto:opemipoaikomo@gmail.com?subject=${subject}&body=${body}`;
+    });
+</script>

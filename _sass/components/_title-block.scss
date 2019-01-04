@@ -10,12 +10,21 @@
     }
     &--top-right {
         border-width: 0 0 2px 2px;
+        @media all and (max-width: 640px) {
+            border-left: none;
+        }
     }
     &--bottom-left {
         border-width: 2px 2px 0 0;
+        @media all and (max-width: 640px) {
+            border-right: none;
+        }
     }
     &--bottom-right {
         border-width: 2px 0 0 2px;
+        @media all and (max-width: 640px) {
+            border-left: none;
+        }
     }
     .flex {
         &__child {
@@ -40,7 +49,7 @@
         display: flex;
     }
     &--stacked {
-        padding: 2rem;
+        padding: 2rem 1.6rem;
     }
     &__label {
         .title-block-child--horizontal & {
