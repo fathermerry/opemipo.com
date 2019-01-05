@@ -3,10 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
-	<title>{{ site.title }}</title>
-	<meta content="{{ site.description }}" name="description">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-	<link href="/css/site.css" rel="stylesheet">
+
+	<!-- Primary Meta Tags -->
+	<title>{{ site.title }}</title>
+	<meta name="title" content="{{ site.title }}">
+	<meta name="description" content="{{ site.description }}">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://opemipo.com/">
+	<meta property="og:title" content="{{ site.title }}">
+	<meta property="og:description" content="{{ site.description }}">
+	<meta property="og:image" content="{{ site.url }}/assets/thumbnail.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://opemipo.com/">
+	<meta property="twitter:title" content="{{ site.title }}">
+	<meta property="twitter:description" content="{{ site.description }}">
+	<meta property="twitter:image" content="{{ site.url }}/assets/thumbnail.png">
+
+	<link href="{{ site.url }}/css/site.css" rel="stylesheet">
 </head>
 <body>
 	<!--[if lte IE 9]>

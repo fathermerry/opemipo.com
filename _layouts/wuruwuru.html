@@ -3,9 +3,27 @@
 <head>
 	<meta charset="utf-8">
 	<meta content="ie=edge" http-equiv="x-ua-compatible">
-	<title>{{ site.data.wuruwuru.title }}</title>
-	<meta content="{{ site.data.wuruwuru.description }}" name="description">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+	<!-- Primary Meta Tags -->
+	<title>{{ site.data.wuruwuru.title }}</title>
+	<meta name="title" content="{{ site.data.wuruwuru.title }}">
+	<meta name="description" content="{{ site.data.wuruwuru.description }}">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://opemipo.com/">
+	<meta property="og:title" content="{{ site.data.wuruwuru.title }}">
+	<meta property="og:description" content="{{ site.data.wuruwuru.description }}">
+	<meta property="og:image" content="{{ site.url }}/assets/thumbnail-wuruwuru.png">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://opemipo.com/">
+	<meta property="twitter:title" content="{{ site.data.wuruwuru.title }}">
+	<meta property="twitter:description" content="{{ site.data.wuruwuru.description }}">
+	<meta property="twitter:image" content="{{ site.url }}/assets/thumbnail-wuruwuru.png">
+
 	<link href="{{ site.url }}/css/site.css" rel="stylesheet">
 	<link href="{{ site.url }}/css/wuruwuru.css" rel="stylesheet">
 </head>
