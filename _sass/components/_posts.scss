@@ -1,0 +1,47 @@
+section#posts {
+    padding: 50px 0 20px;
+    @media all and (min-width: 640px) {
+        padding: 50px 0;
+    }
+    header {
+        margin-bottom: 20px;
+    }
+}
+
+.post-summary {
+    border: solid 2px black;
+    padding: 20px;
+    margin: 5px;
+    @media all and (min-width: 640px) {
+        padding: 50px;
+    }
+    &--featured {
+        max-width: 750px;
+        margin: 0 auto;
+        border: 0;
+        padding-top: 0;
+    }
+    &__meta {
+        margin-bottom: 10rem;
+        .post-summary--featured & {
+            margin-bottom: 6rem;
+        }
+        h5 {
+            font-size: 2.2rem;
+            margin: 0 0 5px;
+            text-transform: uppercase;
+        }
+        small {
+            font-size: 1.6rem;
+        }
+    }
+    &__title {
+        p {
+            font-size: 3.6rem;
+            margin: 0;
+            .post-summary--featured & {
+                font-size: 4.8rem;
+            }
+        }
+    }
+}

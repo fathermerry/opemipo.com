@@ -1,0 +1,33 @@
+.one-to-five {
+    position: relative;
+    overflow: hidden;
+    > div {
+        transform: translateY(-50px);
+    }
+    .number {
+        span {
+            color: white;
+            -webkit-text-stroke: 2px #e5e5e5;
+            vertical-align: top;
+            text-shadow:
+                1px 1px 0 #e5e5e5,
+                -1px -1px 0 #e5e5e5,  
+                1px -1px 0 #e5e5e5,
+                -1px 1px 0 #e5e5e5,
+                1px 1px 0 #e5e5e5;
+        }
+        &--small {
+            height: 95px;
+            span {
+                font-size: 14rem;
+            }
+        }
+        &--large {
+            height: 190px;
+            span {
+                font-size: 28rem;
+                letter-spacing: -10px;
+            }
+        }
+    }
+}

@@ -5,12 +5,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.wuruwuruTitle }}</title>
-  <meta name="description" content="{{ site.wuruwuruDescription }}">
+  <title>{{ site.data.wuruwuru.title }}</title>
+  <meta name="description" content="{{ site.data.wuruwuru.description }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/site.css">
+  <link rel="stylesheet" href="/css/wuruwuru.css">
 </head>
 
 <body>
@@ -19,7 +19,6 @@
   <![endif]-->
   {% include wuruwuru/header.html %}
   <main>
-    {% include wuruwuru/featured.html %}
     {% include wuruwuru/posts.html %}
   </main>
 </body>

@@ -21,3 +21,26 @@
 		}
     }
 }
+
+.grid {
+	position: relative;
+	&__child {
+		float: left;
+		position: relative;
+		&--half {
+			width: 50%;
+			@media all and (max-width: 640px) {
+				width: 100%;
+				&--sm {
+					width: 50%;
+				}
+			}
+		}
+	}
+	&:after {
+		content: '';
+		clear: both;
+		position: relative;
+		display: block;
+	}
+}

@@ -1,11 +1,11 @@
 - name: Wuruwuru
   description: A publication about my design work
-  url: https://medium.com/wuruwuru
+  url: /wuruwuru
   
 - name: Design at Paystack
   description: The Paystack design team blog
   url: https://design.paystack.com
 
-- name: Helloworld
+- name: Helloworld Studios
   description: The Helloworld Collective blog
   url: https://medium.helloworld.ng

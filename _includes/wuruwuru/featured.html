@@ -1,7 +1,15 @@
-<section>
+<section id="featured">
   {% assign featuredPost = site.data.work[0] %}
-  {{ featuredPost.title }}
-  {{ featuredPost.source }}
-  {{ featuredPost.url }}
-  {{ featuredPost.date }}
+  <article class="post-summary post-summary--featured">
+    {% include wuruwuru/feature-illustrations/one-to-five.html %}
+    <div class="post-summary__meta">
+      <h5><b>Most Recent</b></h5>
+      <small><b>Published to {{ featuredPost.source }} on {{ featuredPost.date }}</b></small>
+    </div>
+    <div class="post-summary__title">
+      <a href="{{ featuredPost.url }}">
+        <p class="serif"><b>{{ featuredPost.title }}</b></p>
+      </a>
+    </div>
+  </article>  
 </section>

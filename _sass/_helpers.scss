@@ -8,6 +8,11 @@
 
  .hidden {
     display: none !important;
+    &-sm {
+        @media all and (max-width: 640px) {
+            display: none !important;
+        }
+    }
 }
 
 /*

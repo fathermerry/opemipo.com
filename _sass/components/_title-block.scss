@@ -63,12 +63,21 @@
         .title-block-child--stacked & {
             margin-bottom: 5px;
         }
+        .title-block-child--image & {
+            padding: 1.6rem 1.6rem 0;
+        }
     }
     &__value {
         .title-block-child--horizontal & {
             flex: 1;
             padding: 1.6rem;
             text-align: right;
+        }
+        .title-block-child--image & {
+            text-align: center;
+            img {
+                width: 120px;
+            }
         }
         a {
             margin-right: 5px;

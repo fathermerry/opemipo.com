@@ -1,8 +1,24 @@
-<section>
-  {% for post in site.data.work offset:1 %}
-    {{ post.title }}
-    {{ post.url }}
-    {{ post.source }}
-    {{ post.date }}
-  {% endfor %}
+<section id="posts">
+    <div class="bounds">
+        <header>
+            <h5 class="common--text-label">Older Posts</h5>
+        </header>
+        <div class="grid">
+            {% for post in site.data.work offset:1 %}
+            <div class="grid__child grid__child--half">
+                <article class="post-summary">
+                    <div class="post-summary__meta">
+                        <h5><b>{{ post.category }}</b></h5>
+                        <small><b>Published to {{ post.source }} on {{ post.date }}</b></small>
+                    </div>
+                    <div class="post-summary__title">
+                        <a href="{{ post.url }}">
+                            <p class="serif"><b>{{ post.title }}</b></p>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
 </section>

@@ -2,6 +2,7 @@
 # Add front matter so Jekyll can build
 ---
 
+@import "normalize";
 @import "global";
 @import "helpers";
 @import "print";

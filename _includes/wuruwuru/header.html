@@ -1,7 +1,42 @@
 <header>
-  {{ site.data.about.firstName }}
-  {{ site.data.about.lastName }}
-  {{ site.url }}
-  {{ site.wuruwuruTitle }}
-  {{ site.wuruwuruDescription }}
+  <div class="flex">
+    <div class="flex__child">
+      <div class="title-block title-block--top-left">
+        <div class="title-block-child title-block-child--image">
+          <div class="title-block-child__label">
+            Logo
+          </div>
+          <div class="title-block-child__value">
+            <img src="/assets/images/wuruwuru.png" alt="Wuruwuru Logo">
+          </div>
+        </div>
+        <div class="title-block-child title-block-child--horizontal">
+          <div class="title-block-child__label">
+            Name
+          </div>
+          <div class="title-block-child__value">
+            <b>{{ site.data.wuruwuru.title }}</b>
+          </div>
+        </div>
+        <div class="title-block-child title-block-child--horizontal">
+          <div class="title-block-child__label">
+            Created By
+          </div>
+          <div class="title-block-child__value">
+            <a href="/">
+              <b>{{ site.data.about.firstName }} {{ site.data.about.lastName }}</b>
+            </a>
+          </div>
+        </div>
+        <div class="title-block-child title-block-child--stacked">
+          <div class="title-block-child__value">
+            {{ site.data.wuruwuru.description }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex__child flex__child--fluid">
+      {% include wuruwuru/featured.html %}
+    </div>
+  </div>
 </header>

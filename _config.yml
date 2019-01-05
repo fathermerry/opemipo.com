@@ -19,11 +19,6 @@ description: >-
 baseurl: / # the subpath of your site, e.g. /blog
 url: https://opemipo.com
 
-# Wuruwuru
-wuruwuruTitle: Wuruwuru
-wuruwuruDescription: Thoughts on design, case studies of personal projects, and hopefully interesting visual essays.
-wuruwuruUrl: https://wuruwuru.com
-
 # Build settings
 markdown: kramdown
 plugins:
