@@ -1,0 +1,115 @@
+section#currently-digging {
+    @media all and (min-width: 640px) {
+        padding: 50px 0 0;
+    }
+}
+
+.currently-digging {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    p {
+        margin: 0;
+        font-size: 2.2rem;
+    }
+    h5 {
+        font-size: 3rem;
+        margin: 20px 0 10px;
+        background: linear-gradient(90deg, #E84978 -12.19%, #4677B1 22.13%, #ACD79D 46.65%, #CF4A4A 76.77%, #065EC6 114.6%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.disc {
+    border: solid 2px black;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    margin: 0 0 40px;
+    @media all and (min-width: 640px) {
+        width: 500px;
+        height: 500px;
+        padding: 0;
+        margin: 0;
+        margin: 0 40px;
+    }
+    &__center {
+        &:before, &:after {
+            content: '';
+            border: solid 2px black;
+            border-radius: 50%;
+            background: white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+        }
+        &:before {
+            width: 150px;
+            height: 150px;
+            @media all and (max-width: 640px) {
+                width: 75px;
+                height: 75px;
+            }
+        }
+        &:after {
+            width: 75px;
+            height: 75px;
+            @media all and (max-width: 640px) {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.disc-text {
+    display: block;
+    width: 100%;
+    height: 4.8rem;
+    span {
+        white-space: nowrap;
+        color: white;
+        -webkit-text-stroke: 2px #e5e5e5;
+        vertical-align: top;
+        text-shadow:
+            1px 1px 0 #e5e5e5,
+            -1px -1px 0 #e5e5e5,  
+            1px -1px 0 #e5e5e5,
+            -1px 1px 0 #e5e5e5,
+            1px 1px 0 #e5e5e5;
+        font-size: 6.4rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    @media all and (max-width: 640px) {
+        height: 3.6rem;
+        span {
+            font-size: 4.8rem;
+        }
+    }
+    &.serif {
+        height: 8rem;
+        span {
+            font-size: 8rem;
+            text-transform: none;
+        }
+        @media all and (max-width: 640px) {
+            height: 6rem;
+            span {
+                font-size: 6rem;
+            }
+        }
+    }
+}
