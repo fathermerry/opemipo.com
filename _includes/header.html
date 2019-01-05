@@ -1,56 +1,51 @@
 <header>
-  <div class="flex">
-    <div class="flex__child">
-      <div class="title-block title-block--top-left">
-        <div class="title-block-child title-block-child--horizontal">
-          <div class="title-block-child__label">
-            Full Name
-          </div>
-          <div class="title-block-child__value">
-            <b>{{ site.data.about.lastName }} {{ site.data.about.firstName }}</b>
-          </div>
-        </div>
-        <div class="title-block-child title-block-child--horizontal">
-          <div class="title-block-child__label">
-            Short Bio
-          </div>
-          <div class="title-block-child__value">
-            <b>{{ site.data.about.gender }}, {{ site.data.about.nationality }}</b>
-          </div>
-        </div>
-        <div class="flex">
-          <div class="flex__child">
-            <div class="title-block-child title-block-child--stacked">
-              <div class="title-block-child__label">
-                Currently Doing
-              </div>
-              <div class="title-block-child__value">
-                {% assign currentCompany = site.data.employers[0] %}
-                <b>{{ currentCompany.role }} at <a href="{{ currentCompany.url }}" target="_blank">{{ currentCompany.name }}</a></b>
-              </div>
+    <div class="flex">
+        <div class="flex__child">
+            <div class="title-block title-block--top-left">
+                <div class="title-block-child title-block-child--horizontal">
+                    <div class="title-block-child__label">
+                        Full Name
+                    </div>
+                    <div class="title-block-child__value">
+                        <b>{{ site.data.about.lastName }} {{ site.data.about.firstName }}</b>
+                    </div>
+                </div>
+                <div class="title-block-child title-block-child--horizontal">
+                    <div class="title-block-child__label">
+                        Short Bio
+                    </div>
+                    <div class="title-block-child__value">
+                        <b>{{ site.data.about.gender }}, {{ site.data.about.nationality }}</b>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="flex__child">
+                        <div class="title-block-child title-block-child--stacked">
+                            <div class="title-block-child__label">
+                                Currently Doing
+                            </div>
+                            <div class="title-block-child__value">
+                                {% assign currentCompany = site.data.employers[0] %} <b>{{ currentCompany.role }} at <a href="{{%20currentCompany.url%20}}" target="_blank">{{ currentCompany.name }}</a></b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex__child">
+                        <div class="title-block-child title-block-child--stacked">
+                            <div class="title-block-child__label">
+                                On the internet
+                            </div>
+                            <div class="title-block-child__value">
+                                <b>{% for link in site.data.contact %} <a href="{{%20link.url%20}}" target="_blank">{{ link.name }}</a> {% endfor %}</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="flex__child">
-            <div class="title-block-child title-block-child--stacked">
-              <div class="title-block-child__label">
-                On the internet
-              </div>
-              <div class="title-block-child__value">
-                <b>
-                  {% for link in site.data.contact %}
-                  <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
-                  {% endfor %} 
-                </b>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="flex__child flex__child--fluid">
+            <div class="source-code-link">
+                <a href="https://github.com/fathermerry/opemipo.com" target="_blank">View Source Code</a>
+            </div>
+        </div>
     </div>
-    <div class="flex__child flex__child--fluid">
-      <div class="source-code-link">
-        <a href="https://github.com/fathermerry/opemipo.com" target="_blank">View Source Code</a>
-      </div>
-    </div>
-  </div>
 </header>
