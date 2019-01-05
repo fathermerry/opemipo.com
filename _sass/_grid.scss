@@ -9,3 +9,15 @@
 		display: block;
 	}
 }
+
+.bounds {
+    position: relative;
+    @media all and (min-width: 640px) {
+        max-width: 1150px;
+		margin: 0 auto;
+		padding: 0 20px;
+		&--sm {
+			max-width: 900px;
+		}
+    }
+}

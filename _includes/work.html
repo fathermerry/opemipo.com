@@ -1,4 +1,18 @@
-<section>
-  <section>{% include work/faq.html %}</section>
-  <section>{% include work/publications.html %}</section>
+<section id="work">
+  <div class="bounds">
+    <div class="intro intro--secondary">
+      <h2 class="serif">I design software for web and mobile</h2>
+      <h3>I've worked for startups in eCommerce and logistics, done interesting freelance work as part of the collective Helloworld, and now I lead the team designing for payments at Paystack.</h3>
+    </div>
+    <div class="bounds bounds--sm">
+        <div class="flex">
+            <div class="flex__child flex__child--fluid">
+                {% include work/faq.html %}
+            </div>
+            <div class="flex__child">
+                {% include work/publications.html %}
+            </div>
+        </div>
+    </div>
+  </div>
 </section>

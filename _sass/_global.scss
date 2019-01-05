@@ -64,6 +64,15 @@ figure, img {
     margin: 0;
 }
 
+/*
+ * Reset lists
+ */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -91,6 +100,9 @@ html {
     font-family: 'Founders Grotesk', sans-serif;
     font-size: 62.5%;
     color: #222;
+    @media all and (max-width: 640px) {
+        padding: 10px;
+    }
 }
 
 body {
@@ -99,4 +111,13 @@ body {
     border: solid 2px black;
     font-size: 1.6rem;
     margin-bottom: 20px;
+    @media all and (max-width: 640px) {
+        margin-bottom: 10px;
+    }
+}
+
+main {
+    @media all and (max-width: 640px) {
+        padding: 0 20px;
+    }
 }

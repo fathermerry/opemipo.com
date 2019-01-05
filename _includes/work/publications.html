@@ -1,5 +1,13 @@
-<section>
-  {% for site in site.data.publications %}
-    {{ site.name }} {{ site.description }} {{ site.url }}
-  {% endfor %}
+<section id="publications">
+    <h5 class="common--text-label">Where I publish my work</h5>
+    <ul class="publications">
+        {% for site in site.data.publications %}
+        <li>
+            <a href="{{ site.url }}" target="_blank">
+                <h3><b>{{ site.name }}</b></h3>
+                <h5>{{ site.description }} </h5>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 </section>
