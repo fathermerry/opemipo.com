@@ -9,17 +9,16 @@
             color: white;
             -webkit-text-stroke: 2px #e5e5e5;
             vertical-align: top;
-            text-shadow:
-                1px 1px 0 #e5e5e5,
-                -1px -1px 0 #e5e5e5,  
-                1px -1px 0 #e5e5e5,
-                -1px 1px 0 #e5e5e5,
-                1px 1px 0 #e5e5e5;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: 600;
         }
         &--small {
             height: 95px;
             span {
                 font-size: 14rem;
+                line-height: 95px;
             }
         }
         &--large {
@@ -27,6 +26,7 @@
             span {
                 font-size: 28rem;
                 letter-spacing: -10px;
+                line-height: 190px;
             }
         }
     }
