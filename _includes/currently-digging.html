@@ -5,16 +5,16 @@
                 <div class="disc">
                     <div class="disc__content">
                         <div class="disc-text disc-text--lg serif">
-                            <span>East Atlanta Love Letter</span>
+                            <span id="disc-text-1"></span>
                         </div>
                         <div class="disc-text">
-                            <span>Loaded Gun J.Cole</span>
+                            <span id="disc-text-2"></span>
                         </div>
                         <div class="disc-text disc-text--lg serif">
-                            <span>Coltrane Malibu Sleep</span>
+                            <span id="disc-text-3"></span>
                         </div>
                         <div class="disc-text">
-                            <span>Khalid Location</span>
+                            <span id="disc-text-4"></span>
                         </div>
                         <div class="disc__center"></div>
                     </div>
@@ -35,3 +35,67 @@
         </div>
     </div>
 </section>
+
+<script src="/assets/js/fallback-tracks.js"></script>
+<script>
+    /**
+     * Randomly shuffle an array
+     * https://stackoverflow.com/a/2450976/1293256
+     * @param  {Array} array The array to shuffle
+     * @return {String}      The first item in the shuffled array
+     */
+    var shuffle = function (array) {
+        var currentIndex = array.length;
+        var temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+            // Pick a remaining element...
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex -= 1;
+
+            // And swap it with the current element.
+            temporaryValue = array[currentIndex];
+            array[currentIndex] = array[randomIndex];
+            array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+    };
+</script>
+<script>
+    const fetchWithTimeout = (path, timeLimit) => {
+        /* global fetch */
+        const req = fetch(API_URL + path);
+        const timeout = new Promise((resolve, reject) => {
+            return setTimeout(() => reject(new Error('request timeout')), timeLimit);
+         });
+        return Promise.race([req, timeout]).then(response => response.json());
+    };
+
+    const fetchTracks = () => {
+        return new Promise(async resolve => {
+            try {
+                const tracks = await fetchWithTimeout('https://spotify-get-playlist-tracks.glitch.me', 10000);
+                resolve(tracks);
+            } catch(e) {
+                resolve(fallbackTracks);
+            }
+        });
+    }
+
+    fetchTracks().then(tracks => {
+        const shuffledTracks = shuffle(tracks);
+        [1,2,3,4].forEach(number => {
+            const span = document.getElementById(`disc-text-${number}`);
+            const tracksToShow = shuffledTracks.splice(0, 2);
+            tracksToShow.forEach(track => {
+                const link = document.createElement('a');
+                link.setAttribute('href', track.external_urls.spotify);
+                link.setAttribute('target', '_blank');
+                link.innerHTML = track.name;
+                span.appendChild(link);
+            });
+        });
+    });
+</script>
