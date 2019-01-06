@@ -21,6 +21,9 @@ section#faq {
         @media all and (max-width: 640px) {
             font-size: 2rem;
         }
+        @media all and (max-width: 568px) {
+            font-size: 1.6rem;
+        }
     }
     p {
         margin: 5px 0;

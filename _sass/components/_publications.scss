@@ -12,6 +12,10 @@ section#publications {
         @media all and (min-width: 640px) {
             left: -40px;
         }
+        @media all and (max-width: 568px) {
+            width: 250px;
+            height: 250px;
+        }
     }
 }
 
