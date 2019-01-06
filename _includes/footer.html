@@ -4,7 +4,7 @@
         <div class="flex__child flex__child--fluid">
             <div class="contact">
                 <p class="contact__label">To get in touch with me, email me at</p>
-                <p class="contact__email"><a href="mailto:{{%20site.data.about.email%20}}">{{ site.data.about.email }}</a></p>
+                <p class="contact__email"><a href="mailto:{{ site.data.about.email }}">{{ site.data.about.email }}</a></p>
             </div>
         </div>
         <div class="flex__child">
@@ -14,7 +14,7 @@
                         I'm Reading
                     </div>
                     <div class="title-block-child__value">
-                        {% assign currentRead = site.data.books[0] %} <a href="{{%20currentRead.url%20}}" target="_blank"><b>{{ currentRead.name }}</b></a>
+                        {% assign currentRead = site.data.books[0] %} <a href="{{ currentRead.url }}" target="_blank"><b>{{ currentRead.name }}</b></a>
                     </div>
                 </div>
                 <div class="title-block-child title-block-child--horizontal">

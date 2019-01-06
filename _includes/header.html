@@ -25,7 +25,7 @@
                                 Currently Doing
                             </div>
                             <div class="title-block-child__value">
-                                {% assign currentCompany = site.data.employers[0] %} <b>{{ currentCompany.role }} at <a href="{{%20currentCompany.url%20}}" target="_blank">{{ currentCompany.name }}</a></b>
+                                {% assign currentCompany = site.data.employers[0] %} <b>{{ currentCompany.role }} at <a href="{{ currentCompany.url }}" target="_blank">{{ currentCompany.name }}</a></b>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                                 On the internet
                             </div>
                             <div class="title-block-child__value">
-                                <b>{% for link in site.data.contact %} <a href="{{%20link.url%20}}" target="_blank">{{ link.name }}</a> {% endfor %}</b>
+                                <b>{% for link in site.data.contact %} <a href="{{ link.url }}" target="_blank">{{ link.name }}</a> {% endfor %}</b>
                             </div>
                         </div>
                     </div>
