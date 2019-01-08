@@ -64,9 +64,9 @@
     };
 </script>
 <script>
-    const fetchWithTimeout = (path, timeLimit) => {
+    const fetchWithTimeout = (url, timeLimit) => {
         /* global fetch */
-        const req = fetch(API_URL + path);
+        const req = fetch(url);
         const timeout = new Promise((resolve, reject) => {
             return setTimeout(() => reject(new Error('request timeout')), timeLimit);
          });
@@ -76,7 +76,7 @@
     const fetchTracks = () => {
         return new Promise(async resolve => {
             try {
-                const tracks = await fetchWithTimeout('https://spotify-get-playlist-tracks.glitch.me', 10000);
+                const tracks = await fetchWithTimeout('https://spotify-get-playlist-tracks.glitch.me', 6000);
                 resolve(tracks);
             } catch(e) {
                 resolve(fallbackTracks);
