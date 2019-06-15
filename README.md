@@ -1,7 +1,7 @@
 Opemipo's Website
 ====================
 
-This is the code that runs [opemipo.com](https://opemipo.com) and [wuruwuru.com](wuruwuru.com). It's based on Jekyll.
+This is the code that runs [opemipo.com](https://opemipo.com). It's based on Jekyll.
 
 ### Editing the code
 
