@@ -1,47 +1,10 @@
-@font-face {
-    font-family: 'Founders Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-display: auto;
-    src: local('Founders Grotesk'),
-        url('/assets/fonts/FoundersGroteskWeb-Regular.woff2') format('woff2'), 
-        url('/assets/fonts/FoundersGroteskWeb-Regular.woff') format('woff');
-    unicode-range: U+000-5FF;
-}
-
-@font-face {
-    font-family: 'Founders Grotesk';
-    font-style: bolder;
-    font-weight: 600;
-    font-display: auto;
-    src: local('Founders Grotesk'),
-        url('/assets/fonts/FoundersGroteskWeb-Medium.woff2') format('woff2'), 
-        url('/assets/fonts/FoundersGroteskWeb-Medium.woff') format('woff');
-    unicode-range: U+000-5FF;
-}
-
-@font-face {
-    font-family: 'Bianco Serif';
-    font-style: bold;
-    font-weight: 700;
-    font-display: auto;
-    src: local('Bianco Serif'),
-        url('/assets/fonts/BiancoSerif-Bold.woff2') format('woff2'), 
-        url('/assets/fonts/BiancoSerif-Bold.woff') format('woff');
-    unicode-range: U+000-5FF;
-}
-
-.serif {
-    font-family: 'Bianco Serif', serif;
-    letter-spacing: -0.07em;
-}
-
-p {
-    font-family: 'Founders Grotesk', sans-serif;
+html, body {
+    font-family: sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
     font-weight: normal;
+    font-family: sans-serif;
 }
 
 h1 {

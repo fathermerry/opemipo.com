@@ -1,0 +1,10 @@
+.wip {
+    width: 400px;
+    max-width: 100%;
+    padding: 20px;
+    &__links {
+        > li {
+            margin-bottom: 10px;
+        }
+    }
+}
