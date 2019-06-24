@@ -35,11 +35,21 @@
 	</script>
 </head>
 <body>
-	<!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+	<!-- {% include wip.html %} -->
+	<nav>
+		<section class="nav__titleblocks">
+			{% include nav/titleblocks.html %}
+		</section>
+		<section class="nav__frame">
+			{% if page.navigation %}
+				{% include {{ page.navigation }} %}
+			{% endif %}
+		</section>
+	</nav>
 	<main>
-		{% include wip.html %}
+		{% if page.body %}
+			{% include {{ page.body }} %}
+		{% endif %}
 	</main>
 </body>
 </html>
