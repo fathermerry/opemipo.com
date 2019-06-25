@@ -8,11 +8,11 @@
     background: white;
     mask-size: 200% 200%;
     -webkit-mask-size: 200% 200%;
-    mask-image: radial-gradient(farthest-corner at 0% 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 50%);
-    -webkit-mask-image: radial-gradient(farthest-corner at 0% 0%, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 50%);
+    mask-image: radial-gradient(circle at -40% -40%, rgba(0,0,0,1), rgba(0,0,0,1) 45%, rgba(0,0,0,0) 60%);
+    -webkit-mask-image: radial-gradient(circle at -40% -40%, rgba(0,0,0,1), rgba(0,0,0,1) 45%, rgba(0,0,0,0) 60%);
     &--is-hiding {
-        animation: wipe 2s cubic-bezier(0.075, 0.82, 0.165, 1);
-        -webkit-animation: wipe 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        animation: wipe 2s cubic-bezier(0.19, 1, 0.22, 1); // easeOutExpo
+        -webkit-animation: wipe 2s cubic-bezier(0.19, 1, 0.22, 1); // easeOutExpo
     }
     section {
         width: 400px;
@@ -36,10 +36,10 @@
 
 @keyframes wipe {
     from { -webkit-mask-position: 0% 0%; }
-    to { -webkit-mask-position: 100% 100%; }
+    to { -webkit-mask-position: 100% 120%; }
 }
 
 @-webkit-keyframes wipe {
     from { -webkit-mask-position: 0% 0%; }
-    to { -webkit-mask-position: 100% 100%; }
+    to { -webkit-mask-position: 100% 120%; }
 }
