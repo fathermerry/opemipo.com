@@ -1,4 +1,4 @@
-<div class="wip">
+<div id="work-in-progress" class="wip">
     <section>
         <h3>Hi</h3>
         <p>My name is Opemipo Aikomo, and I'm from Nigeria. I'm a web and user experience designer who leads a small team at <a href="https://paystack.com" target="_blank">Paystack</a>.</p>
@@ -29,10 +29,20 @@
             </li>
             <p>
                 <hr>
-                <small>Last Updated on June 18, 2019 6:14pm. 
-                    <a class="wip__show-site" href="#">Show site</a>
+                <small>Last Updated on June 25, 2019 6:16am. 
+                    <a onclick="hideWIP()" class="wip__show-site" href="#">Show site</a>
                 </small>
             </p>
         </ul>
     </section>
 </div>
+<script>
+    function hideWIP() {
+        const wipDiv = document.getElementById('work-in-progress');
+        wipDiv.classList.add('wip--is-hiding');
+        setTimeout(() => {
+            wipDiv.style.display = 'none';
+            wipDiv.classList.remove('wip--is-hiding');
+        }, 1200);
+    }
+</script>
