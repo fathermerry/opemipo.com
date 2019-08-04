@@ -25,31 +25,26 @@
 	<meta property="twitter:image" content="{{ site.url }}/assets/images/thumbnail.png">
 
 	<link href="/css/site.css" rel="stylesheet">
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-69061408-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){ dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'UA-69061408-1');
-	</script>
+	{% if jekyll.environment == "production" %}
+		{% include ga.html %}
+	{% endif %}
 </head>
 <body>
-	{% include wip.html %}
-	<nav>
-		<section class="nav__titleblocks">
-			{% include nav/titleblocks.html %}
-		</section>
-		<section class="nav__frame">
-			{% if page.navigation %}
-				{% include {{ page.navigation }} %}
-			{% endif %}
-		</section>
-	</nav>
-	<main>
-		{% if page.body %}
-			{% include {{ page.body }} %}
-		{% endif %}
-	</main>
+	<!-- {% include wip.html %} -->
+	<div class="container">
+		<header>
+			<h1>Opemipo Aikomo</h1>
+			<h3>Web and UX Designer</h3>
+		</header>
+		<main class="stage"></main>
+		<footer class="two-col-footer">
+			<span>
+				<a href="mailto:ope@wuruwuru.com">ope@wuruwuru.com</a>
+			</span>
+			<span>
+				<a href="https://github.com/fathermerry/opemipo.com" target="_blank">© 2019</a>
+			</span>
+		</footer>
+	</div>
 </body>
 </html>

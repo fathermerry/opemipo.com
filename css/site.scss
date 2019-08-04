@@ -3,12 +3,14 @@
 ---
 
 @import "normalize";
-@import "global";
+@import "reset";
 @import "helpers";
 @import "print";
 @import "text";
 @import "layout";
+@import "container";
 @import "form";
 
 @import "components/wip";
-@import "components/nav";
+@import "components/stage";
+@import "components/footer";

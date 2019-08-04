@@ -3,23 +3,24 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: normal;
+    margin: 0 0 .5rem;
     font-family: sans-serif;
 }
 
 h1 {
-    font-size: 4.2rem;
+    font-size: 2.4rem;
     @media all and (max-width: 640px) {
-        font-size: 3.8rem;
+        font-size: 1.8rem;
     }
 }
 
 h2 {
-    font-size: 3.4rem;
+    font-size: 2.1rem;
 }
 
 h3 {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 h4 {
@@ -36,9 +37,9 @@ b, strong {
 
 a {
     color: inherit;
+    text-decoration: none;
     &:hover {
         color: #CF4A4A;
-        text-decoration: none;
     }
     &:focus, &:active {
         text-decoration: underline;
