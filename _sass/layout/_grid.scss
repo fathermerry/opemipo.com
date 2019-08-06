@@ -3,27 +3,25 @@
     min-height: 100%;
     width: 100%;
     display: grid;
-    @media (max-width: 767px) {
-        grid-template-columns: repeat(3, auto);
-        grid-template-areas: 
-            "name"
-            "stage"
-            "intro"
-    }
     @media (min-width: 768px) {
         grid-template-columns: 500px auto;
-        grid-template-rows: repeat(2, auto);
         grid-template-areas: 
             "name stage"
             "intro stage"
     }
     @media (min-width: 768px) and (min-aspect-ratio: 1/2) and (max-aspect-ratio: 3/2) {
         grid-template-columns: auto;
-        grid-template-rows: repeat(3, auto);
+        grid-template-rows: 150px 200px auto;
         grid-template-areas: 
             "name"
             "intro"
             "stage"
+    }
+    @media (max-width: 767px) {
+        grid-template-areas: 
+            "name"
+            "stage"
+            "intro"
     }
     &__name {
         grid-area: name;

@@ -1,0 +1,13 @@
+.intro {
+    padding: 30px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    &__copy {
+        @media (min-width: 768px) and (min-aspect-ratio: 1/2) and (max-aspect-ratio: 3/2) {
+            column-count: 2;
+            column-gap: 30px;
+        }
+    }
+}
