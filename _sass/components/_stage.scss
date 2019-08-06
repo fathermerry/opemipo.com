@@ -1,11 +1,14 @@
 .stage {
     position: relative;
-    width: 100%;
-    height: 100%;
     background-image: radial-gradient(black 10%, rgba(0,0,0,0) 10%);
     background-position: 0 0;
     background-size: 20px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 500px;
+    @media (min-width: 768px) {
+        height: 100%;
+    }
 }
