@@ -32,19 +32,26 @@
 <body>
 	{% include wip.html %}
 	<div class="container">
-		<header>
-			<h1>Opemipo Aikomo</h1>
-			<h3>Web and UX Designer</h3>
-		</header>
-		<main class="stage"></main>
-		<footer class="two-col-footer">
-			<span>
-				<a href="mailto:ope@wuruwuru.com">ope@wuruwuru.com</a>
-			</span>
-			<span>
-				<a href="https://github.com/fathermerry/opemipo.com" target="_blank">© 2019</a>
-			</span>
-		</footer>
+		<div class="container__column container__column--500">
+			<main class="intro">
+				<h1 class="intro__title">opemipo aikomo</h1>
+				<div class="intro__copy">
+					<p>Hey you, welcome. I’m Opemipo, a web and ux designer based in Lagos, Nigeria.</p>
+					<p>I lead design at Paystack, where we build software and APIs for online commerce in Africa. I write about design and share my work on my journal Wuruwuru.</p>
+					<p>I’m usually @fathermerry on the internet e.g. Twitter, VSCO. I blog on Medium. To get in touch, just email me at ope@wuruwuru.com.</p>
+				</div>
+			</main>
+		</div>
+		<div class="container__column">
+			<section class="stage">
+				<div class="stage__grid">
+					<div class="stage__item stage__item--left-top">note</div>
+					<div class="stage__item stage__item--left-bottom">note</div>
+					<div class="stage__item stage__item--center">bookmark</div>
+					<div class="stage__item stage__item--right">vinyl</div>
+				</div>
+			</section>
+		</div>
 	</div>
 </body>
 </html>

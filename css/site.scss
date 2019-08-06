@@ -8,9 +8,9 @@
 @import "print";
 @import "text";
 @import "layout";
-@import "container";
 @import "form";
+
+@import "layout/container";
 
 @import "components/wip";
 @import "components/stage";
-@import "components/footer";

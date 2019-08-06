@@ -1,9 +1,0 @@
-.two-col-footer {
-    display: flex;
-    > span {
-        flex: 1;
-        &:nth-child(2n) {
-            text-align: right;
-        }
-    }
-}

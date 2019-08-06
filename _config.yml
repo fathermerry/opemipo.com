@@ -13,9 +13,9 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Opemipo Aikomo's Website
+title: Opemipo Aikomo
 description: >- 
-  My name is Opemipo Aikomo and this website is a curation of all the writing and design work that I do.
+  I'm a web and UX designer from Nigeria.
 baseurl: / # the subpath of your site, e.g. /blog
 url: https://opemipo.com
 

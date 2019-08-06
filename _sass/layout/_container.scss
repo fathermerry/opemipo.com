@@ -1,0 +1,14 @@
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #FFFFFA;
+    display: flex;
+    &__column {
+        flex: 1;
+        &--500 {
+            width: 500px;
+            flex: none;
+        }
+    }
+}
