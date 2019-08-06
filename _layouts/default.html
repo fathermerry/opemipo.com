@@ -30,7 +30,9 @@
 	{% endif %}
 </head>
 <body>
-	<!-- {% include wip.html %} -->
+	{% if jekyll.environment == "production" %}
+		{% include wip.html %}
+	{% endif %}
 	<div class="grid">
 		<div class="grid__name">
 			<h1>opemipo aikomo</h1>
