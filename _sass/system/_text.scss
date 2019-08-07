@@ -1,17 +1,43 @@
-html, body {
-    font-family: sans-serif;
+@font-face {
+    font-family: 'Crimson Pro';
+    src: url('/assets/fonts/CrimsonPro-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Crimson Pro';
+    font-style: italic;
+    src: url('/assets/fonts/CrimsonPro-Italic.woff');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-weight: 500;
+    src: url('/assets/fonts/SpaceGrotesk-Medium.woff');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+    src: url('/assets/fonts/SpaceGrotesk-SemiBold.woff');
+}
+
+@font-face {
+    font-family: 'Castledown';
+    src: url('/assets/fonts/Castledown-Fun.woff');
+}
+
+/* System Fonts as used by GitHub */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1, h2, h3, h4, h5 {
     margin: 0 0 .5rem;
-    font-family: sans-serif;
+    font-family: 'Space Grotesk';
 }
 
 h1 {
-    font-size: 2rem;
-    @media all and (max-width: 640px) {
-        font-size: 1.8rem;
-    }
+    font-size: 2.1rem;
 }
 
 h2 {
@@ -30,18 +56,29 @@ b, strong {
 a {
     color: inherit;
     text-decoration: none;
+    background-image: linear-gradient(to right, #2D3137 0%, transparent 50%);
+    background-position: 0 1.05em;
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
     &:hover {
         color: #CF4A4A;
-    }
-    &:focus, &:active {
-        text-decoration: underline;
+        background-image: linear-gradient(to right, #CF4A4A 0%, transparent 50%);
+        text-decoration: none;
     }
 }
 
 p {
     font-size: 1em;
     line-height: 1.4;
+
     &:first-child {
         margin-top: 0;
     }
+}
+
+.small-caps {
+    -moz-font-feature-settings: "c2sc", "smcp";
+    -ms-font-feature-settings: "c2sc", "smcp";
+    -webkit-font-feature-settings: "c2sc", "smcp";
+    font-feature-settings: "c2sc", "smcp";
 }
