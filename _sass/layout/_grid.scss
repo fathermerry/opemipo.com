@@ -7,7 +7,7 @@
         grid-template-columns: 500px auto;
         grid-template-areas: 
             "name stage"
-            "intro stage"
+            "intro stage";
     }
     @media (min-width: 768px) and (min-aspect-ratio: 1/2) and (max-aspect-ratio: 3/2) {
         grid-template-columns: auto;
@@ -15,13 +15,13 @@
         grid-template-areas: 
             "name"
             "intro"
-            "stage"
+            "stage";
     }
     @media (max-width: 767px) {
         grid-template-areas: 
             "name"
             "stage"
-            "intro"
+            "intro";
     }
     &__name {
         grid-area: name;
