@@ -1,0 +1,22 @@
+<template id="template-name">
+    <style>
+        section {
+            padding: 30px;
+        }
+    </style>
+    <section>
+        <slot class="title"></slot>
+    </section>
+</template>
+<script>
+    class PronounceName extends HTMLElement {
+        constructor() {
+            super();
+            const { content } = document.getElementById('template-name');
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.appendChild(content.cloneNode(true));
+        }
+    }
+
+    customElements.define('pronounce-name', PronounceName);
+</script>

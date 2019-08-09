@@ -35,15 +35,14 @@
 	{% endif %}
 	<div class="grid">
 		<div class="grid__name">
-			<div class="title">
-				<pronounce-name
-					morphology="ọpẹ́-mi-pọ̀"
-					ipa="ɔ̃k͡pɛmĩk͡pɔ"
-					url="http://yorubaname.com/entries/opemipo"
-				>
-					<h1>opemipo aikomo</h1>
+			<header class="site-title">
+				<h1>opemipo aikomo</h1>
+				<pronounce-name>
+					<span slot="morphology">"ọpẹ́-mi-pọ̀"</span>
+					<span slot="ipa">ɔ̃k͡pɛmĩk͡pɔ</span>
+					<span slot="url">http://yorubaname.com/entries/opemipo</span>
 				</pronounce-name>
-			</div>
+			</header>
 		</div>
 		<div class="grid__intro">
 			<main class="intro">
@@ -77,10 +76,10 @@
 		</div>
 	</div>
 
-	<!-- Templates -->
+	<!-- Web Components -->
 	{% include components/stage.html %}
-	<script src="js/pronounce-name.js"></script>
-	<script src="js/sticky-note.js"></script>
-	<script src="js/sticky-bookmark.js"></script>
+	{% include components/name.html %}
+	{% include components/note.html %}
+	{% include components/bookmark.html %}
 </body>
 </html>

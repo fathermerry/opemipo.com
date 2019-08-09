@@ -1,0 +1,60 @@
+<template id="template-bookmark">
+    <style>
+        .bookmark {
+            position: relative;
+            width: 150px;
+            height: 360px;
+            background: #fffffa;
+            padding: 30px;
+            text-decoration: none;
+            color: #2D3137;
+            border: solid 1px #2D3137;
+            display: grid;
+            grid-template-rows: auto 30px;
+            grid-template-areas:
+                "logo"
+                "link";
+            text-align: center;
+        }
+
+        .bookmark img {
+            grid-area: logo;
+        }
+
+        .bookmark span {
+            grid-area: link;
+            line-height: 30px;
+        }
+    </style>
+    <figure>
+        <a class="bookmark"></a>
+    </figure>
+</template>
+<script>
+    class StickyBookmark extends HTMLElement {
+        constructor() {
+            super();
+
+            const { content } = document.getElementById('template-bookmark');
+            const htmlContent = content.cloneNode(true);
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.appendChild(htmlContent);
+
+            const text = this.getAttribute('text');
+            const url = this.getAttribute('url');
+            const image = this.getAttribute('image');
+            const element = shadowRoot.querySelector('.bookmark');
+            if (text && url) {
+                element.innerHTML = text;
+                element.setAttribute('href', url);
+            }
+            if (image) {
+                const bookmarkImage = document.createElement('img');
+                bookmarkImage.setAttribute('src', image);
+                element.appendChild(bookmarkImage);
+            }
+        }
+    }
+
+    customElements.define('sticky-bookmark', StickyBookmark);
+</script>
