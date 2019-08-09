@@ -1,0 +1,29 @@
+<template id="template-wordmark">
+    <style>
+        header {
+            padding: 30px;
+        }
+        .name {
+            font-size: 1.4em;
+            font-family: 'Bluu Next';
+            font-weight: bold;
+        }
+    </style>
+    <header>
+        <span class="name">
+            hey, |
+        </span>
+    </header>
+</template>
+<script>
+    class WordMark extends HTMLElement {
+        constructor() {
+            super();
+            const { content } = document.getElementById('template-wordmark');
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.appendChild(content.cloneNode(true));
+        }
+    }
+
+    customElements.define('word-mark', WordMark);
+</script>
