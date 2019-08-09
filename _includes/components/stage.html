@@ -1,0 +1,52 @@
+<template id="template-stage">
+    <style>
+        .bounds {
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+        }
+    
+        @media (min-width: 768px) {
+            .bounds {
+                height: 100%;
+            }
+        }
+    
+        .stage {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(black 10%, rgba(0,0,0,0) 10%);
+            background-position: 0 0;
+            background-size: 20px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+            cursor: -moz-grab;
+            cursor: -webkit-grab;
+        }
+        
+        @media (min-width: 768px) {
+            .stage {
+                height: 100%;
+            }
+        }
+    </style>
+    <div class="bounds">
+        <slot class="stage"></slot>
+    </div>
+</template>
+<script>
+    class DraggableStage extends HTMLElement {
+        constructor() {
+            super();
+            const template = document.getElementById('template-stage');
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.appendChild(template.content.cloneNode(true));
+        }
+    }
+
+    customElements.define('draggable-stage', DraggableStage);
+</script>
