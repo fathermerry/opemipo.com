@@ -1,40 +1,28 @@
 @font-face {
-    font-family: 'Crimson Pro';
-    src: url('/assets/fonts/CrimsonPro-Regular.woff');
-}
-
-@font-face {
-    font-family: 'Crimson Pro';
-    font-style: italic;
-    src: url('/assets/fonts/CrimsonPro-Italic.woff');
-}
-
-@font-face {
-    font-family: 'Space Grotesk';
+    font-family: 'Bluu Next';
     font-weight: 500;
-    src: url('/assets/fonts/SpaceGrotesk-Medium.woff');
+    src: url('/assets/fonts/BluuNext-Bold.otf');
 }
 
 @font-face {
-    font-family: 'Space Grotesk';
-    font-weight: 600;
-    src: url('/assets/fonts/SpaceGrotesk-SemiBold.woff');
+    font-family: 'Soleil';
+    src: url('/assets/fonts/Soleil-Regular.woff');
 }
 
 @font-face {
-    font-family: 'Castledown';
-    src: url('/assets/fonts/Castledown-Fun.woff');
+    font-family: 'Soleil';
+    font-weight: bold;
+    src: url('/assets/fonts/Soleil-Bold.woff');
 }
 
 /* System Fonts as used by GitHub */
 body {
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Soleil', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1, h2, h3, h4, h5 {
     margin: 0 0 .5rem;
-    font-family: 'Crimson Pro';
 }
 
 h1 {
