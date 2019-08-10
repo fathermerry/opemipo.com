@@ -1,0 +1,22 @@
+<template id="template-vinyl">
+    <style>
+        .vinyl {
+            width: 360px;
+            height: 360px;
+            color: var(--foreground-color);
+        }
+    </style>
+    <div class="vinyl"></div>
+</template>
+<script>
+    class StickyVinyl extends HTMLElement {
+        constructor() {
+            super();
+            const { content } = document.getElementById('template-vinyl');
+            const shadowRoot = this.attachShadow({ mode: 'open' });
+            shadowRoot.appendChild(content.cloneNode(true));
+        }
+    }
+
+    customElements.define('sticky-vinyl', StickyVinyl);
+</script>

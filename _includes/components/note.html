@@ -5,32 +5,19 @@
             position: relative;
             width: 210px;
             height: 210px;
-            background: #fffffa;
+            font-family: 'Bluu Next';
+            color: var(--foreground-color);
             display: flex;
             justify-content: center;
             align-items: center;
-            font-size: 16px;
-            line-height: 20px;
+            font-size: var(--font-size-h4);
+            line-height: 1.4;
             text-align: center;
             padding: 30px;
             text-decoration: none;
-            color: #2D3137;
-        }
-
-        .note:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: solid 1px #2D3137;
-            transition: all 0.3s;
         }
     </style>
-    <figure>
-        <a class="note"></a>
-    </figure>
+    <a class="note"></a>
 </template>
 <script>
     class StickyNote extends HTMLElement {

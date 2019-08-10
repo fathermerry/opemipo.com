@@ -27,15 +27,24 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 2.441em;
+    font-size: var(--font-size-h1);
 }
 
 h2 {
-    font-size: 1.953em;
+    font-size: var(--font-size-h2);
 }
 
 h3 {
-    font-size: 1.563em;
+    font-size: var(--font-size-h3);
+}
+
+p {
+    font-size: var(--font-size-p);
+    line-height: 1.4;
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 a {
@@ -49,15 +58,6 @@ a {
         color: #CF4A4A;
         background-image: linear-gradient(to right, #CF4A4A 0%, transparent 50%);
         text-decoration: none;
-    }
-}
-
-p {
-    font-size: 1em;
-    line-height: 1.4;
-
-    &:first-child {
-        margin-top: 0;
     }
 }
 

@@ -4,21 +4,20 @@
             position: relative;
             width: 150px;
             height: 360px;
-            background: #fffffa;
+            color: var(--foreground-color);
             padding: 30px;
             text-decoration: none;
-            color: #2D3137;
-            border: solid 1px #2D3137;
             display: grid;
             grid-template-rows: auto 30px;
             grid-template-areas:
                 "logo"
                 "link";
-            text-align: center;
+            justify-content: center;
         }
 
         .bookmark img {
             grid-area: logo;
+            width: 100px;
         }
 
         .bookmark span {
@@ -26,9 +25,7 @@
             line-height: 30px;
         }
     </style>
-    <figure>
-        <a class="bookmark"></a>
-    </figure>
+    <a class="bookmark"></a>
 </template>
 <script>
     class StickyBookmark extends HTMLElement {

@@ -35,45 +35,45 @@
 	{% endif %}
 	<div class="grid">
 		<div class="grid__name">
-			<word-mark
-				name="opemipo aikomo"
-				morphology="ọpẹ́mipọ̀"
-				ipa="ɔ̃k͡pɛmĩk͡pɔ"
-				url="http://yorubaname.com/entries/opemipo"
-			>
-			</word-mark>
+			<word-mark></word-mark>
 		</div>
 		<div class="grid__intro">
 			<main class="intro">
 				<div class="intro__copy">
-					<p>Glad you're here. My name is Opemipo Aikomo and this corner of the internet is my homepage.</p>
-					<p>I’m a web and UX designer based in Lagos, Nigeria. I'm responsible for design at <a target="_blank" href="https://paystack.com">Paystack</a>, where we build software and APIs for online commerce in Africa.</p>
-					<p>I write about design, publish my work and share my web experiments on my journal <a target="_blank" href="https://wuruwuru.com">Wuruwuru</a>. I’m also usually @fathermerry on the internet e.g. <a target="_blank" href="https://twitter.com/fathermerry">Twitter</a>, <a target="_blank" href="https://vsco.co/fathermerry">VSCO</a> or <a target="_blank" href="https://medium.com/@fathermerry">Medium</a>. </p>
-					<p>If you’d like to get in touch, just <a href="mailto:ope@wuruwuru.com">email me</a> at ope@wuruwuru.com.</p>
-					<footer>
-						<span class="small-caps">© Opemipo Aikomo</span>
-					</footer>
+					<p>Glad you're here. My name is <a href="#">Opemipo Aikomo</a> and this corner of the internet is my homepage.</p>
+					<p>I am a Nigerian web and UX designer, responsible for design at <a target="_blank" href="https://paystack.com">Paystack</a> where we build software and APIs for online commerce in Africa.</p>
+					<p>I write about design, publish my work and share my web experiments on my journal <a target="_blank" href="https://wuruwuru.com">Wuruwuru</a>. I’m usually @fathermerry on the internet—whether it's <a target="_blank" href="https://twitter.com/fathermerry">thoughts</a>, <a target="_blank" href="https://vsco.co/fathermerry">pictures</a> or <a target="_blank" href="https://medium.com/@fathermerry">essays</a>. </p>
+					<p><a href="mailto:ope@wuruwuru.com">Contact me</a> at ope@wuruwuru.com ❊</p>
 				</div>
 			</main>
 		</div>
 		<div class="grid__stage">
 			<draggable-stage>
-				<sticky-note 
-					text="I recently shared: All the things I’m interested in / July 2019"
-					url="https://medium.com/@fathermerry/all-the-things-im-interested-in-july-2019-322610cef44a"
-				>
-				</sticky-note>
-				<sticky-note
-					text="I’m putting together a self learning guide for UX Design. Halfway through!"
-					url="https://www.notion.so/UX-Design-Learning-Guide-24d5040b127749aa81b1af98ad93e64f"
-				>
-				</sticky-note>
-				<sticky-bookmark
-					text="wuruwuru.com"
-					url="https://wuruwuru.com"
-					image="/assets/images/wuruwuru.png"
-				>
-				</sticky-bookmark>
+				<draggable-item>
+					<sticky-note 
+						text="All the things I’m interested in / July 2019 ✍"
+						url="https://medium.com/@fathermerry/all-the-things-im-interested-in-july-2019-322610cef44a"
+					>
+					</sticky-note>
+				</draggable-item>
+				<draggable-item>
+					<sticky-note
+						text="UX Design Self-Learning Guide ✍"
+						url="https://www.notion.so/UX-Design-Learning-Guide-24d5040b127749aa81b1af98ad93e64f"
+					>
+					</sticky-note>
+				</draggable-item>
+				<draggable-item>
+					<sticky-bookmark
+						text="wuruwuru.com"
+						url="https://wuruwuru.com"
+						image="/assets/images/wuruwuru.png"
+					>
+					</sticky-bookmark>
+				</draggable-item>
+				<draggable-item>
+					<sticky-vinyl></sticky-vinyl>
+				</draggable-item>
 			</draggable-stage>
 		</div>
 	</div>
@@ -81,7 +81,9 @@
 	<!-- Web Components -->
 	{% include components/wordmark.html %}
 	{% include components/stage.html %}
+	{% include components/draggable.html %}
 	{% include components/note.html %}
 	{% include components/bookmark.html %}
+	{% include components/vinyl.html %}
 </body>
 </html>
