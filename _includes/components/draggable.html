@@ -1,21 +1,24 @@
 <template id="template-draggable">
     <style>
-        figure {
+        .draggable {
             background: var(--background-color);
             border: solid var(--foreground-color);
             border-width: var(--border-size);
             box-shadow: 5px 5px 0 var(--background-darker);
             transition: transform .3s, box-shadow .3s;
+            touch-action: none;
+            user-select: none;
+            margin: 0 20px;
         }
 
-        figure:hover {
+        .draggable:hover {
             transform: translate(-5px, -5px);
             box-shadow: 12px 12px 0 var(--background-darker);
         }
     </style>
-    <figure>
+    <div class="draggable">
         <slot></slot>
-    </figure>
+    </div>
 </template>
 <script>
     class DraggableItem extends HTMLElement {
@@ -24,6 +27,23 @@
             const { content } = document.getElementById('template-draggable');
             const shadowRoot = this.attachShadow({ mode: 'open' });
             shadowRoot.appendChild(content.cloneNode(true));
+            const element = shadowRoot.querySelector('.draggable');
+            element.addEventListener('dragstart', () => {
+                console.log('drag started');
+                this.broadcast('itemDragged');
+            });
+            element.addEventListener('dragend', () => {
+                console.log('drag ended');
+                element.style.zIndex = '';
+                this.broadcast('itemDropped');
+            });
+            element.addEventListener('drag', event => {
+                console.log('dragging');
+            });
+        }
+        broadcast(action) {
+            const dragEvent = new Event(action);
+            document.dispatchEvent(dragEvent);
         }
     }
 
