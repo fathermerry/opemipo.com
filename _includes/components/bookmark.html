@@ -13,11 +13,15 @@
                 "logo"
                 "link";
             justify-content: center;
+            text-align: center;
+        }
+
+        .bookmark figure {
+            grid-area: logo;
         }
 
         .bookmark img {
-            grid-area: logo;
-            width: 100px;
+            width: 72px;
         }
 
         .bookmark span {
@@ -42,13 +46,15 @@
             const image = this.getAttribute('image');
             const element = shadowRoot.querySelector('.bookmark');
             if (text && url) {
-                element.innerHTML = text;
+                element.innerHTML = `<span>${text}</span>`;
                 element.setAttribute('href', url);
             }
             if (image) {
+                const bookmarkImageParent = document.createElement('figure');
                 const bookmarkImage = document.createElement('img');
                 bookmarkImage.setAttribute('src', image);
-                element.appendChild(bookmarkImage);
+                bookmarkImageParent.appendChild(bookmarkImage);
+                element.appendChild(bookmarkImageParent);
             }
         }
     }
