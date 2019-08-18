@@ -2,4 +2,14 @@ html, body {
     height: 100%;
     overflow: auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    padding: 30px;
 }

@@ -33,38 +33,31 @@
 	{% if jekyll.environment == "production" %}
 		{% include components/wip.html %}
 	{% endif %}
-	<div class="grid">
-		<div class="grid__name">
-			<word-mark></word-mark>
-		</div>
-		<div class="grid__intro">
-			<main class="intro">
-				<div class="intro__copy">
-					<p>Glad you're here. My name is <a href="#">Opemipo Aikomo</a> and this corner of the internet is my homepage.</p>
-					<p>I am a Nigerian web and UX designer, responsible for design at <a target="_blank" href="https://paystack.com">Paystack</a> where we build software and APIs for online commerce in Africa.</p>
-					<p>I write about design, publish my work and share my web experiments on my journal <a target="_blank" href="https://wuruwuru.com">Wuruwuru</a>. I’m usually @fathermerry on the internet—whether it's <a target="_blank" href="https://twitter.com/fathermerry">thoughts</a>, <a target="_blank" href="https://vsco.co/fathermerry">pictures</a> or <a target="_blank" href="https://medium.com/@fathermerry">essays</a>. </p>
-					<p><a href="mailto:ope@wuruwuru.com">Contact me</a> at ope@wuruwuru.com ❊</p>
-				</div>
-			</main>
-		</div>
-		<div class="grid__stage">
-			<draggable-stage>
-				<draggable-item>
-					<sticky-note text="All the things I’m interested in / July 2019 ✍" url="https://medium.com/@fathermerry/all-the-things-im-interested-in-july-2019-322610cef44a"></sticky-note>
-				</draggable-item>
-				<draggable-item>
-					<sticky-note text="UX Design Self-Learning Guide ✍" url="https://www.notion.so/UX-Design-Learning-Guide-24d5040b127749aa81b1af98ad93e64f"></sticky-note>
-				</draggable-item>
-				<draggable-item>
-					<sticky-bookmark text="wuruwuru.com" url="https://wuruwuru.com" image="/assets/images/wuruwuru.png"></sticky-bookmark>
-					</sticky-bookmark>
-				</draggable-item>
-				<draggable-item>
-					<sticky-vinyl></sticky-vinyl>
-				</draggable-item>
-			</draggable-stage>
-		</div>
-	</div>
+	<main>
+		<draggable-stage>
+			<draggable-item>
+				<sticky-note text="All the things I’m interested in / July 2019 ✍" url="https://medium.com/@fathermerry/all-the-things-im-interested-in-july-2019-322610cef44a"></sticky-note>
+			</draggable-item>
+			<draggable-item>
+				<sticky-note text="UX Design Self-Learning Guide ✍" url="https://www.notion.so/UX-Design-Learning-Guide-24d5040b127749aa81b1af98ad93e64f"></sticky-note>
+			</draggable-item>
+			<draggable-item>
+				<sticky-bookmark text="wuruwuru.com" url="https://wuruwuru.com" image="/assets/images/wuruwuru.png"></sticky-bookmark>
+				</sticky-bookmark>
+			</draggable-item>
+			<draggable-item>
+				<sticky-vinyl></sticky-vinyl>
+			</draggable-item>
+		</draggable-stage>
+	</main>
+	<footer>
+		<word-mark></word-mark>
+		<nav>
+			<a href="#">about</a>
+			<span class="divider">&middot;</span>
+			<a href="#">email</a>
+		</nav>
+	</footer>
 
 	<!-- Web Components -->
 	{% include components/wordmark.html %}

@@ -1,20 +1,7 @@
 <template id="template-stage">
-    <style>
-        .bounds {
-            width: 100%;
-            height: 500px;
-            overflow: hidden;
-            position: relative;
-        }
-    
-        @media (min-width: 768px) {
-            .bounds {
-                height: 100%;
-            }
-        }
-    
+    <style>    
         .stage {
-            position: absolute;
+            position: relative;
             width: 100%;
             height: 100%;
             background-image: radial-gradient(black 10%, rgba(0,0,0,0) 10%);
@@ -27,16 +14,8 @@
             cursor: -moz-grab;
             cursor: -webkit-grab;
         }
-        
-        @media (min-width: 768px) {
-            .stage {
-                height: 100%;
-            }
-        }
     </style>
-    <div class="bounds">
-        <slot class="stage"></slot>
-    </div>
+    <slot class="stage"></slot>
 </template>
 <script>
     class DraggableStage extends HTMLElement {
