@@ -39,10 +39,10 @@
             shadowRoot.appendChild(template.content.cloneNode(true));
 
             const stage = shadowRoot.querySelector('.stage');
-            document.addEventListener('itemDragged', () => {
+            document.addEventListener('objectDragged', () => {
                 stage.classList.add('stage__animated');
             });
-            document.addEventListener('itemDropped', () => {
+            document.addEventListener('objectDropped', () => {
                 stage.classList.remove('stage__animated');
             });
         }

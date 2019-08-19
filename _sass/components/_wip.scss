@@ -8,8 +8,12 @@
     background: white;
     mask-size: 200% 200%;
     -webkit-mask-size: 200% 200%;
-    mask-image: radial-gradient(circle at -40% -40%, rgba(0,0,0,1), rgba(0,0,0,1) 45%, rgba(0,0,0,0) 60%);
-    -webkit-mask-image: radial-gradient(circle at -40% -40%, rgba(0,0,0,1), rgba(0,0,0,1) 45%, rgba(0,0,0,0) 60%);
+    mask-image: radial-gradient(circle at -40% -40%, rgba(0,0,0,1), rgba(0,0,0,1) 45%, rgba(0,0,0,0) 70%);
+    -webkit-mask-image: radial-gradient(circle at -40% -40%, rgba(0,0,0,1), rgba(0,0,0,1) 45%, rgba(0,0,0,0) 70%);
+    @media (max-width: 640px) {
+        mask-image: radial-gradient(circle at -40% -40%, rgba(0,0,0,1), rgba(0,0,0,1) 60%, rgba(0,0,0,0) 70%);
+        -webkit-mask-image: radial-gradient(circle at -40% -40%, rgba(0,0,0,1), rgba(0,0,0,1) 60%, rgba(0,0,0,0) 70%);
+    }
     &--is-hiding {
         animation: wipe 2s cubic-bezier(0.19, 1, 0.22, 1); // easeOutExpo
         -webkit-animation: wipe 2s cubic-bezier(0.19, 1, 0.22, 1); // easeOutExpo

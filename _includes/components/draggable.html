@@ -30,12 +30,12 @@
             const element = shadowRoot.querySelector('.draggable');
             element.addEventListener('dragstart', () => {
                 console.log('drag started');
-                this.broadcast('itemDragged');
+                this.broadcast('objectDragged');
             });
             element.addEventListener('dragend', () => {
                 console.log('drag ended');
                 element.style.zIndex = '';
-                this.broadcast('itemDropped');
+                this.broadcast('objectDropped');
             });
             element.addEventListener('drag', event => {
                 console.log('dragging');
