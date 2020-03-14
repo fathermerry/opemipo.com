@@ -1,0 +1,7 @@
+.spine {
+  position: sticky;
+  top: 0;
+  &__name {
+    writing-mode: vertical-lr;
+  }
+}

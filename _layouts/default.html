@@ -31,44 +31,28 @@
 </head>
 <body>
 	<div class="grid">
-		<nav class="spine">
-			<h1 class="spine__name">Opemipo Aikomo</h1>
-			<div class="spine__handle">
-				<span>@</span>
-				<span>fathermerry</span>
+		<nav class="grid__spine">
+			<div class="spine">
+				<h1 class="spine__name">Opemipo Aikomo</h1>
+				<div class="spine__handle">
+					<span class="spine__@">@</span>
+					<span class="spine__word">father</span>
+					<span class="spine__word">merry</span>
+				</div>
 			</div>
 		</nav>
-		<main class="content">
-			<header><h2>Highlights</h2></header>
-			<ul>
-				<li>
-					<a href="#">
-						<h3>New website</h3>
-					</a>
-					<p>I documented the process of making this website: learning CSS grids and web components only to end up with a much simpler layout than originally planned.</p>
-				</li>
-				<li>
-					<a href="#">
-						<h3>@ori.igo</h3>
-					</a>
-					<p>I commisioned my artist friend Doyin Shotunde to paint a mural in my apartment, then made an Instagram page for it with a cheeky backstory.</p>
-				</li>
-				<li>
-					<a href="#">
-						<h3>UX Learning Guide</h3>
-					</a>
-					<p>Im curating a list of personal recommendations for learning UX design. Its my answer to “I want to learn to UX design but I dont know how to start“.</p>
-				</li>
-				<li>
-					<a href="#">
-						<h3>Timeline Expert</h3>
-					</a>
-					<p>If shown a random tweet on your timeline, can you correctly guess who posted it? Timi and I built a fun trivia game for this.</p>
-				</li>
-			</ul>
+		<main class="grid__content">
+			<header><h2>{{ page.title }}</h2></header>
+			<div class="content">
+				{% if page.body %}
+					{% include {{ page.body }} %}
+				{% endif %}
+			</div>
 		</main>
-		<aside>
-			<a href="#" class="circle"></a>
+		<aside class="grid__stage">
+			{% if page.object %}
+				{% include {{ page.object }} %}
+			{% endif %}
 		</aside>
 	</div>
 </body>

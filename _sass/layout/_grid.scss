@@ -3,33 +3,24 @@
     min-height: 100%;
     width: 100%;
     display: grid;
-    @media (min-width: 768px) {
-        grid-template-columns: 500px auto;
+    grid-template-columns: 100px 450px auto;
+    grid-template-areas: 
+        "spine content stage";
+    @media (max-width: 900px) {
+        grid-template-columns: 60px auto;
+        grid-template-rows: auto 50vh;
         grid-template-areas: 
-            "name stage"
-            "intro stage";
+            "spine content"
+            "spine stage";
     }
-    @media (min-width: 768px) and (min-aspect-ratio: 1/2) and (max-aspect-ratio: 3/2) {
-        grid-template-columns: auto;
-        grid-template-rows: 150px 200px auto;
-        grid-template-areas: 
-            "name"
-            "intro"
-            "stage";
+    &__spine {
+        grid-area: spine;
     }
-    @media (max-width: 767px) {
-        grid-template-areas: 
-            "name"
-            "stage"
-            "intro";
-    }
-    &__name {
-        grid-area: name;
-    }
-    &__intro {
-        grid-area: intro;
+    &__content {
+        grid-area: content;
     }
     &__stage {
         grid-area: stage;
+        background: red;
     }
 }
