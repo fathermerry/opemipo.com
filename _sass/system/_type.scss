@@ -68,17 +68,23 @@ a {
     text-decoration: none;
     &:hover {
         text-decoration: none;
+        color: inherit;
     }
 }
 
 .ext-link {
     background-image: linear-gradient(to right, #2D3137 0%, transparent 50%);
-    background-position: 0 1.05em;
+    background-position: 0 1.2em;
     background-repeat: repeat-x;
     background-size: 4px 2px;
     &:hover {
-        background-image: linear-gradient(to right, #CF4A4A 0%, transparent 50%);
+        animation: flicker 1s infinite;
     }
+}
+
+@keyframes flicker {
+    from { background-image: linear-gradient(to right, #2D3137 0%, transparent 0%); }
+    to { background-image: linear-gradient(to right, #2D3137 0%, transparent 50%); }
 }
 
 .small-caps {

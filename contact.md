@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Highlights
-body: pages/home.html
+title: Contact
+body: pages/contact.html
 object: objects/wuruwuru.html
 ---

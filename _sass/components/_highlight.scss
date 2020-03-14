@@ -1,0 +1,27 @@
+.highlight {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  h2 {
+    font-family: 'Söhne Wide';
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  li:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    .prose & {
+      font-size: 1.8rem;
+    }
+  }
+}
