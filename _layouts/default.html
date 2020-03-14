@@ -55,11 +55,15 @@
 			</div>
 		</div>
 		<div class="grid__content">
-			<header><h2>{{ page.title }}</h2></header>
 			<div class="content">
-				{% if page.body %}
-					{% include {{ page.body }} %}
-				{% endif %}
+				<header>
+					<h2>{{ page.title }}</h2>
+				</header>
+				<div class="content__scrollarea">
+					{% if page.body %}
+						{% include {{ page.body }} %}
+					{% endif %}
+				</div>
 			</div>
 		</div>
 		<aside class="grid__stage">

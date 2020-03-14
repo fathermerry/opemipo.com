@@ -1,0 +1,9 @@
+.stage {
+  background-image: radial-gradient(var(--foreground-color) 20%, rgba(0,0,0,0) 20%);
+  background-position: 0 0;
+  background-size: 10px 10px;
+  width: 100%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
