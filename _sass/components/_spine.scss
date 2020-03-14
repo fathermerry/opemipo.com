@@ -1,7 +1,26 @@
 .spine {
   position: sticky;
   top: 0;
+  height: 100vh;
+  border-right: solid 2px var(--foreground-color);
+  display: flex;
+  flex-direction: column;
   &__name {
-    writing-mode: vertical-lr;
+    padding: 20px 0;
+    overflow: hidden;
+    flex: 1;
+    h1 {
+      writing-mode: vertical-lr;
+      font-family: 'Söhne Wide', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-transform: uppercase;
+      color: var(--background-color);
+      -webkit-text-stroke-width: 0.1px;
+      -webkit-text-stroke-color: var(--foreground-color);
+      font-size: 4.8rem;
+      padding: 0;
+      margin: 0;
+      line-height: 100px;
+      white-space: nowrap;
+    }
   }
 }

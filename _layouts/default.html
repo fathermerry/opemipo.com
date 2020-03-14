@@ -31,24 +31,37 @@
 </head>
 <body>
 	<div class="grid">
-		<nav class="grid__spine">
+		<div class="grid__spine">
 			<div class="spine">
-				<h1 class="spine__name">Opemipo Aikomo</h1>
-				<div class="spine__handle">
-					<span class="spine__@">@</span>
-					<span class="spine__word">father</span>
-					<span class="spine__word">merry</span>
+				<div class="spine__name">
+					<h1>Opemipo Aikomo</h1>
 				</div>
+				<nav class="spine__nav">
+					<ul class="nav">
+						<li>
+							<a class="nav__text--uppercase" href="/">Home</a>
+						</li>
+						<li>
+							<a class="nav__text--italics" href="/about">About</a>
+						</li>
+						<li>
+							<a class="nav__text--bold" href="/work">Work</a>
+						</li>
+						<li>
+							<a class="nav__text--large" href="/contact">@</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
-		</nav>
-		<main class="grid__content">
+		</div>
+		<div class="grid__content">
 			<header><h2>{{ page.title }}</h2></header>
 			<div class="content">
 				{% if page.body %}
 					{% include {{ page.body }} %}
 				{% endif %}
 			</div>
-		</main>
+		</div>
 		<aside class="grid__stage">
 			{% if page.object %}
 				{% include {{ page.object }} %}
