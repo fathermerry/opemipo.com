@@ -20,12 +20,13 @@
 
 @font-face {
     font-family: 'Söhne Semibold';
-    font-weight: bolder;
+    font-weight: normal;
     src: url('/assets/fonts/soehne-web-halbfett.woff');
 }
 
 @font-face {
     font-family: 'Söhne Wide';
+    font-weight: normal;
     src: url('/assets/fonts/soehne-breit-web-kraftig.woff');
 }
 
@@ -65,14 +66,18 @@ p {
 a {
     color: inherit;
     text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.ext-link {
     background-image: linear-gradient(to right, #2D3137 0%, transparent 50%);
     background-position: 0 1.05em;
     background-repeat: repeat-x;
     background-size: 4px 2px;
     &:hover {
-        color: #CF4A4A;
         background-image: linear-gradient(to right, #CF4A4A 0%, transparent 50%);
-        text-decoration: none;
     }
 }
 
