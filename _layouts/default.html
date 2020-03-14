@@ -63,9 +63,11 @@
 			</div>
 		</div>
 		<aside class="grid__stage">
-			{% if page.object %}
-				{% include {{ page.object }} %}
-			{% endif %}
+			<div class="stage">
+				{% if page.object %}
+					{% include {{ page.object }} %}
+				{% endif %}
+			</div>
 		</aside>
 	</div>
 </body>
