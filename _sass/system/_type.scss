@@ -72,21 +72,6 @@ a {
     }
 }
 
-.ext-link {
-    background-image: linear-gradient(to right, #2D3137 0%, transparent 50%);
-    background-position: 0 1.2em;
-    background-repeat: repeat-x;
-    background-size: 4px 2px;
-    &:hover {
-        animation: flicker 1s infinite;
-    }
-}
-
-@keyframes flicker {
-    from { background-image: linear-gradient(to right, #2D3137 0%, transparent 0%); }
-    to { background-image: linear-gradient(to right, #2D3137 0%, transparent 50%); }
-}
-
 .small-caps {
     -moz-font-feature-settings: "c2sc", "smcp";
     -ms-font-feature-settings: "c2sc", "smcp";

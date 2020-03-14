@@ -1,10 +1,17 @@
 .content {
   height: 100%;
   header {
+    height: 150px;
     padding: 20px;
     position: sticky;
     top: 0;
     background: var(--background-color);
+    h2 {
+      font-family: 'Söhne Wide';
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
   }
   &__scrollarea {
     flex: 1;

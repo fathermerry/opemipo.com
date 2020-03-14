@@ -2,12 +2,6 @@
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
-  h2 {
-    font-family: 'Söhne Wide';
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
   li:not(:last-child) {
     margin-bottom: 3rem;
   }
@@ -24,4 +18,18 @@
       font-size: 1.8rem;
     }
   }
+  a {
+    background-image: linear-gradient(to right, #2D3137 0%, transparent 50%);
+    background-position: 0 1.2em;
+    background-repeat: repeat-x;
+    background-size: 4px 2px;
+    &:hover {
+        animation: flicker .7s infinite;
+    }
+  }
+}
+
+@keyframes flicker {
+  0%, 60% { background-image: linear-gradient(to right, #2D3137 0%, transparent 0%); }
+  61% { background-image: linear-gradient(to right, #2D3137 0%, transparent 50%); }
 }
