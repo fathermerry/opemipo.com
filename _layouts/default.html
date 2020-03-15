@@ -58,6 +58,9 @@
 			<div class="content">
 				<header>
 					<h2>{{ page.title }}</h2>
+					{% if page.title == 'About' %}
+						{% include bio.html %}
+					{% endif %}
 				</header>
 				<div class="content__scrollarea">
 					{% if page.body %}
