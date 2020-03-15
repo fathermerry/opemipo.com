@@ -6,4 +6,7 @@
   height: 100vh;
   position: sticky;
   top: 0;
+  @media (min-width: 640px) and (max-width: 900px) {
+    height: 50vh;
+  }
 }

@@ -7,11 +7,16 @@
     grid-template-areas: 
         "spine content stage";
     @media (max-width: 900px) {
-        grid-template-columns: 60px auto;
-        grid-template-rows: auto 50vh;
+        grid-template-columns: 80px auto;
+        grid-template-rows: auto auto;
         grid-template-areas: 
             "spine content"
             "spine stage";
+    }
+    @media (max-width: 640px) {
+        grid-template-areas: 
+            "spine content"
+            "stage stage";
     }
     &__spine {
         grid-area: spine;
