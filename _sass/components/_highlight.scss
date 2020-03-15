@@ -1,25 +1,18 @@
 .highlight {
   &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-  li:not(:last-child) {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
   }
   h3 {
-    font-size: 1.4rem;
     line-height: 1.2;
     margin-bottom: 1rem;
   }
   p {
-    font-size: 1.4rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    .prose & {
-      font-size: 1.8rem;
-    }
   }
   a.ext-link {
     font-family: "Söhne Wide", sans-serif;
+    font-size: 1.6rem;
     letter-spacing: 0.5px;
   }
 }

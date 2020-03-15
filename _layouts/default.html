@@ -38,16 +38,16 @@
 				</div>
 				<nav class="spine__nav">
 					<ul class="nav">
-						<li>
+						<li {% if page.title == 'Highlights' %}class="active"{% endif %} >
 							<a class="nav__text--uppercase" href="/">Home</a>
 						</li>
-						<li>
+						<li {% if page.title == 'About' %}class="active"{% endif %}>
 							<a class="nav__text--italics" href="/about">About</a>
 						</li>
-						<li>
+						<li {% if page.title == 'Work' %}class="active"{% endif %}>
 							<a class="nav__text--bold" href="/work">Work</a>
 						</li>
-						<li>
+						<li {% if page.title == 'Contact' %}class="active"{% endif %}>
 							<a class="nav__text--large" href="/contact">@</a>
 						</li>
 					</ul>
