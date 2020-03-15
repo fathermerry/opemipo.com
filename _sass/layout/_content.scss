@@ -1,6 +1,6 @@
 .content {
   height: 100%;
-  header {
+  &__header {
     padding: 20px 20px 0;
     position: sticky;
     top: 0;
@@ -21,12 +21,15 @@
         animation: flicker .7s infinite;
     }
   }
-  &__scrollarea {
+  &__body {
     flex: 1;
-    padding: 150px 20px 20px;
-    overflow: auto;
-    @media (max-width: 900px) {
-      padding-bottom: 50px;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  &--has-scrolled {
+    .content__header {
+      position: relative;
+      transform: translateY(100px);
     }
   }
 }

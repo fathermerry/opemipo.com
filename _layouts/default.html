@@ -30,13 +30,13 @@
 	{% endif %}
 </head>
 <body>
-	<div class="grid">
+	<div class="grid" id="grid">
 		<div class="grid__spine">
 			<div class="spine">
 				<div class="spine__name">
 					<h1>Opemipo Aikomo</h1>
 				</div>
-				<nav class="spine__nav">
+				<nav id="nav" class="spine__nav">
 					<ul class="nav">
 						<li {% if page.title == 'Highlights' %}class="active"{% endif %} >
 							<a class="nav__text--uppercase" href="/">Home</a>
@@ -55,14 +55,14 @@
 			</div>
 		</div>
 		<div class="grid__content">
-			<div class="content">
-				<header>
+			<div id="content" class="content">
+				<div id="content-header" class="content__header">
 					<h2>{{ page.title }}</h2>
 					{% if page.title == 'About' %}
 						{% include bio.html %}
 					{% endif %}
-				</header>
-				<div class="content__scrollarea">
+				</div>
+				<div id="content-body" class="content__body">
 					{% if page.body %}
 						{% include {{ page.body }} %}
 					{% endif %}
@@ -78,4 +78,30 @@
 		</aside>
 	</div>
 </body>
+
+<script>
+	const content = document.getElementById('content');
+	const contentHeader = document.getElementById('content-header');
+	const contentBody = document.getElementById('content-body');
+	const positionToScrollHeader = 100;
+	let headerIsSticky = true;
+	document.body.addEventListener('scroll', () => {
+		const headerShouldScroll = headerIsSticky && (document.body.scrollTop >= positionToScrollHeader);
+		const headerShouldStick = !headerIsSticky && (document.body.scrollTop < positionToScrollHeader);
+		if (headerShouldScroll) {
+			content.classList.add('content--has-scrolled');
+			headerIsSticky = false;
+		} else if (headerShouldStick) {
+			content.classList.remove('content--has-scrolled');
+			headerIsSticky = true;
+		}
+	});
+</script>
+
+<script>
+	const nav = document.getElementById('nav');
+	const navOffset = window.innerHeight - nav.offsetHeight;
+	nav.style.position = 'sticky';
+	nav.style.top = `${navOffset}px`;
+</script>
 </html>

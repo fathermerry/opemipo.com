@@ -1,14 +1,13 @@
 .spine {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100%;
   border-right: solid 2px var(--foreground-color);
-  display: flex;
-  flex-direction: column;
   &__name {
-    flex: 1;
     text-align: -webkit-center;
     overflow: auto;
+    position: sticky;
+    top: 0;
     h1 {
       writing-mode: vertical-lr;
       font-family: 'Söhne Wide';
@@ -22,8 +21,13 @@
       margin: 20px 0;
       white-space: nowrap;
       @media (max-width: 900px) {
-        font-size: 5rem;
+        font-size: 4.8rem;
       }
     }
+  }
+  &__nav {
+    position: relative;
+    background: var(--background-color);
+    z-index: 2;
   }
 }
