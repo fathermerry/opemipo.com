@@ -78,3 +78,12 @@ a {
     -webkit-font-feature-settings: "c2sc", "smcp";
     font-feature-settings: "c2sc", "smcp";
 }
+
+.prose {
+    p {
+        font-size: 1.6rem;
+    }
+    small {
+        font-family: 'Söhne Wide';
+    }
+}

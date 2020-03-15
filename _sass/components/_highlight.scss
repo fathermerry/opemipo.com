@@ -18,14 +18,9 @@
       font-size: 1.8rem;
     }
   }
-  a {
-    background-image: linear-gradient(to right, #2D3137 0%, transparent 50%);
-    background-position: 0 1.2em;
-    background-repeat: repeat-x;
-    background-size: 4px 2px;
-    &:hover {
-        animation: flicker .7s infinite;
-    }
+  a.ext-link {
+    font-family: "Söhne Wide", sans-serif;
+    letter-spacing: 0.5px;
   }
 }
 
