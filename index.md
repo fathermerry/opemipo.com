@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Highlights
+title: Projects
 body: pages/home.html
 object: objects/wuruwuru.html
 ---
