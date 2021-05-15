@@ -2,21 +2,9 @@
 # Add front matter so Jekyll can build
 ---
 
-@import "normalize";
-@import "reset";
-@import "helpers";
-@import "print";
+@import "reset/normalize";
+@import "reset/print";
 
-@import "system/site";
-@import "system/type";
-@import "system/form";
-
-@import "layout/body";
-@import "layout/grid";
-@import "layout/stage";
-@import "layout/content";
-
-@import "components/spine";
-@import "components/nav";
-@import "components/highlight";
-@import "components/biodata";
+@import "global/site";
+@import "global/helpers";
+@import "global/type";

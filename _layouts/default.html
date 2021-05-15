@@ -30,78 +30,11 @@
 	{% endif %}
 </head>
 <body>
-	<div class="grid" id="grid">
-		<div class="grid__spine">
-			<div class="spine">
-				<div class="spine__name">
-					<h1>Ope</h1>
-				</div>
-				<nav id="nav" class="spine__nav">
-					<ul class="nav">
-						<li {% if page.title == 'Highlights' %}class="active"{% endif %} >
-							<a class="nav__text--uppercase" href="/">Home</a>
-						</li>
-						<li {% if page.title == 'About' %}class="active"{% endif %}>
-							<a class="nav__text--italics" href="/about">About</a>
-						</li>
-						<li {% if page.title == 'Work' %}class="active"{% endif %}>
-							<a class="nav__text--bold" href="/work">Work</a>
-						</li>
-						<li {% if page.title == 'Contact' %}class="active"{% endif %}>
-							<a class="nav__text--large" href="/contact">@</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div class="grid__content">
-			<div id="content" class="content">
-				<div id="content-header" class="content__header">
-					<h2>{{ page.title }}</h2>
-					{% if page.title == 'About' %}
-						{% include bio.html %}
-					{% endif %}
-				</div>
-				<div id="content-body" class="content__body">
-					{% if page.body %}
-						{% include {{ page.body }} %}
-					{% endif %}
-				</div>
-			</div>
-		</div>
-		<aside class="grid__stage">
-			<div class="stage">
-				{% if page.object %}
-					{% include {{ page.object }} %}
-				{% endif %}
-			</div>
-		</aside>
+	<div><a href="/">Opemipo</a></div>
+	<div>
+		{% if page.body %}
+			{% include {{ page.body }} %}
+		{% endif %}
 	</div>
 </body>
-
-<script>
-	const content = document.getElementById('content');
-	const contentHeader = document.getElementById('content-header');
-	const contentBody = document.getElementById('content-body');
-	const positionToScrollHeader = 100;
-	let headerIsSticky = true;
-	document.body.addEventListener('scroll', () => {
-		const headerShouldScroll = headerIsSticky && (document.body.scrollTop >= positionToScrollHeader);
-		const headerShouldStick = !headerIsSticky && (document.body.scrollTop < positionToScrollHeader);
-		if (headerShouldScroll) {
-			content.classList.add('content--has-scrolled');
-			headerIsSticky = false;
-		} else if (headerShouldStick) {
-			content.classList.remove('content--has-scrolled');
-			headerIsSticky = true;
-		}
-	});
-</script>
-
-<script>
-	const nav = document.getElementById('nav');
-	const navOffset = window.innerHeight - nav.offsetHeight;
-	nav.style.position = 'sticky';
-	nav.style.top = `${navOffset}px`;
-</script>
 </html>
