@@ -6,6 +6,14 @@ nav > * {
   margin-right: 5px;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 nav a:first-child {
   font-weight: bold;
+}
+
+nav > span {
+  opacity: 0.5;
 }

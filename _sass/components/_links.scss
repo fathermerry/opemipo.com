@@ -1,0 +1,22 @@
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 5px;
+}
+
+.links a {
+  padding: 8px 15px;
+  border-radius: 3px;
+  display: inline-block;
+  text-decoration: none;
+  background: rgba(0,0,0,0.05);
+}
+
+.links a:hover {
+  background: var(--foreground-color);
+  color: var(--background-color);
+}
