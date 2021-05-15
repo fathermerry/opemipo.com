@@ -46,7 +46,7 @@ html {
 
 body {
     font-size: var(--font-size-p);
-    font-family: 'Söhne Book', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 article {
@@ -55,7 +55,6 @@ article {
 
 h1, h2, h3, h4, h5 {
     margin: 0 0 .5rem;
-    font-family: 'Söhne Bold', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 h1 {
@@ -85,8 +84,4 @@ a {
         text-decoration: none;
         color: inherit;
     }
-}
-
-small {
-    font-family: 'Söhne Wide';
 }

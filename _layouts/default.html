@@ -30,7 +30,11 @@
 	{% endif %}
 </head>
 <body>
-	<div><a href="/">Opemipo</a></div>
+	<nav>
+		<a href="/">Opemipo</a>
+		<span>›</span>
+		<span>{{ page.title }}</span>
+	</nav>
 	<div>
 		{% if page.body %}
 			{% include {{ page.body }} %}

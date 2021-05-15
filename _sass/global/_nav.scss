@@ -1,0 +1,11 @@
+nav {
+  margin-bottom: 30px;
+}
+
+nav > * {
+  margin-right: 5px;
+}
+
+nav a:first-child {
+  font-weight: bold;
+}
