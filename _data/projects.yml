@@ -5,8 +5,8 @@
   year: '2021'
   type: Web
 - name: Sendcash
-  about: Fast, affordable money transfer around the world. I designed and
-    built the first version of the Sendcash website and web app for Buycoins.
+  about: An app for fast, affordable money transfer around the world. I designed and
+    built the first version for Buycoins.
   url: https://sendcash.africa/#/
   year: '2020'
   type: Frontend, Product
@@ -30,7 +30,7 @@
   team: Helloworld
   type: Web
 - name: Twinder
-  about: Match with your Twitter crush.
+  about: A bot to match with your Twitter crush.
   url: https://twinderbot.com
   year: '2018'
   team: Helloworld
@@ -55,7 +55,7 @@
   team: Helloworld
   type: Frontend, Product
 - name: 737 Toolbox
-  about: A simple tool so I never have to memorise USSD codes.
+  about: A simple tool for quick dialling USSD codes.
   url: https://737toolbox.com
   year: '2016'
   type: Product
@@ -65,7 +65,7 @@
   year: '2015'
   type: Product, Web
 - name: Lost In Lagos
-  about: Listings site for places and events in Lagos. This is the oldest living
+  about: A listings site for places and events in Lagos. This is the oldest living
     Helloworld project.
   url: https://www.lostinlagos.com/
   year: '2014'

@@ -1,9 +1,9 @@
 {% for project in site.data.projects %}
-  <article class="project">
-    <div class="project__year">
+  <article class="listitem">
+    <div style="margin-right: 10px;">
       <small>{{ project.year }}</small>
     </div>
-    <div class="project__info">
+    <div>
       <a href="{{ project.url }}" target="_blank">
         <b>{{ project.name }}</b>
       </a>

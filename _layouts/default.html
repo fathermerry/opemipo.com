@@ -39,6 +39,11 @@
 		{% if page.body %}
 			{% include {{ page.body }} %}
 		{% endif %}
+		{% if page.title != "Home" %}
+		<div>
+			<a class="button" href="/">Home</a>
+		</div>
+		{% endif %}
 	</main>
 </body>
 </html>
