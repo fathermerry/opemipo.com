@@ -1,10 +1,10 @@
 <article>
-  <p>Music is very special to me. I get to relive people and places through curated playlists, and some of them have stories.</p>
+  <p>Music is very special to me. I get to relive people, places and experiences through curated playlists, and some of them have stories.</p>
 </article>
 {% for playlist in site.data.playlists %}
 <article class="listitem">
   <div style="margin-right: 20px;">
-    <img width="150px" src="{{ playlist.image }}" alt="Tom">
+    <img width="150px" style="margin-bottom: 10px;" src="{{ playlist.image }}" alt="Tom">
   </div>
   <div class="listitem__body">
     <b>{{ playlist.name }}</b>

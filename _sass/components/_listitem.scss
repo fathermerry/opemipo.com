@@ -6,3 +6,9 @@
   display: block;
   margin-bottom: 10px;
 }
+
+@media all and (max-width: 600px) {
+  .listitem {
+    display: block;
+  }
+}
