@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.listitem a {
+.listitem__body > * {
   display: block;
   margin-bottom: 10px;
 }
