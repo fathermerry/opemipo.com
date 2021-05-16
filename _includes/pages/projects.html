@@ -1,0 +1,15 @@
+{% for project in site.data.projects %}
+  <article class="project">
+    <div class="project__year">
+      <small>{{ project.year }}</small>
+    </div>
+    <div class="project__info">
+      <a href="{{ project.url }}" target="_blank">
+        <b>{{ project.name }}</b>
+      </a>
+      <span>
+        {{ project.about }}
+      </span>
+    </div>
+  </article>
+{% endfor %}
