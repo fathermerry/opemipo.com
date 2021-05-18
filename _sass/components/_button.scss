@@ -1,0 +1,15 @@
+.button {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 15px;
+  border-radius: 6px;
+  display: inline-block;
+  text-decoration: none;
+  background: rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.button:hover {
+  background: var(--foreground-color);
+  color: var(--background-color);
+}

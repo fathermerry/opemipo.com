@@ -1,0 +1,73 @@
+- name: Wuruwuru
+  about: A collection of publishing experiments including a database of album covers,
+   an animated short about casual homophobia and a comic about weed.
+  url: http://wuruwuru.com
+  year: '2021'
+  type: Web
+- name: Sendcash
+  about: An app for fast, affordable money transfer around the world. I designed and
+    built the first version for Buycoins.
+  url: https://sendcash.africa/#/
+  year: '2020'
+  type: Frontend, Product
+- name: JAND
+  about: A comic about the lives of Nigerian students in London created and
+    illustrated by Modé Aderinokun. I designed and built the app with help from
+    Tomi Odusanya and Opeyemi Obembe.
+  url: https://jandcomic.com
+  year: '2020'
+  type: Product
+- name: ori.igo
+  about: A mural commisioned by me and painted by Doyin Shotunde.
+  url: https://www.instagram.com/ori.igo/
+  year: '2019'
+  type: ''
+- name: The Subtext
+  about: A publication for Osarumen Osamuyi's _really good_ musings on technology
+    in Africa. I made this with Tomi Odusanya.
+  url: http://www.thesubtext.io/
+  year: '2018'
+  team: Helloworld
+  type: Web
+- name: Twinder
+  about: A bot to match with your Twitter crush.
+  url: https://twinderbot.com
+  year: '2018'
+  team: Helloworld
+  type: Product, Web
+- name: tix.africa
+  about: A self-service ticketing platform for event creators. I designed
+    and built the first version of the website and app with Helloworld.
+  url: https://tix.africa
+  year: '2018'
+  team: Helloworld
+  type: Product
+- name: Workstation
+  about: Website and app for Workstation, a community in Lagos.
+  url: http://workstationng.com
+  year: '2017'
+  team: Helloworld
+  type: Product, Web
+- name: Timeline Expert
+  about: A trivia game to guess who posted a randomly chosen tweet on your timeline.
+  url: https://timeline.expert
+  year: '2017'
+  team: Helloworld
+  type: Frontend, Product
+- name: 737 Toolbox
+  about: A simple tool for quick dialling USSD codes.
+  url: https://737toolbox.com
+  year: '2016'
+  type: Product
+- name: Cruncher
+  about: "An app for browsing bank statements."
+  url: https://cruncherapp.co
+  year: '2015'
+  type: Product, Web
+- name: Lost In Lagos
+  about: A listings site for places and events in Lagos. This is the oldest living
+    Helloworld project.
+  url: https://www.lostinlagos.com/
+  year: '2014'
+  team: Helloworld
+  type: Web

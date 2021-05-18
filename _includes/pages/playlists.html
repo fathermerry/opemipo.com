@@ -1,0 +1,22 @@
+<article>
+  <p>Music is very special to me. I get to relive people, places and experiences through curated playlists, and some of them have stories.</p>
+</article>
+{% for playlist in site.data.playlists %}
+<article class="listitem">
+  <div style="margin-right: 20px;">
+    <img width="150px" style="margin-bottom: 10px;" src="{{ playlist.image }}" alt="Tom">
+  </div>
+  <div class="listitem__body">
+    <b>{{ playlist.name }}</b>
+    <span>{{ playlist.about }}</span>
+    <span>
+      {% if playlist.source == "Spotify" %}
+      <a href="https://open.spotify.com/playlist/{{ playlist.id }}" target="_blank">Spotify</a>
+      {% endif %}
+      {% if playlist.source == "Apple Music" %}
+      <a href="https://music.apple.com/us/playlist/{{ playlist.id }}" target="_blank">Apple Music</a>
+      {% endif %}
+    </span>
+  </div>
+</article>
+{% endfor %}

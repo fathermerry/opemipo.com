@@ -1,0 +1,50 @@
+- name: strobelights
+  image: assets/images/playlists/strobelights.jpeg
+  about: I fell in love with Romanian electronic music when I was in uni. This playlist takes me back to those nights under the OAU Amphitheatre.
+  source: Spotify
+  id: 4uB2gxsLilIpwzwxFU8vP0
+- name: booty cheeks
+  image: assets/images/playlists/booty-cheeks.jpeg
+  about: Boyin has such fantastic taste in music. Each time we link up, I make sure to get a new collection of songs. Usually, I'm hearing them for the first time.
+  source: Spotify
+  id: 5b9PBtDeJs0D95bg5alCvl
+- name: cirque du soleil
+  image: assets/images/playlists/cirque-du.jpeg
+  about: This is a chaotic playlist that starts and ends in a hotel room—one in Vegas, the other in Accra.
+  source: Spotify
+  id: 0VOvz7DiZqKU7aTRj9HYRV
+- name: Timi's du du ke
+  image: assets/images/playlists/duduke.jpeg
+  about: Timi and Tmt make a playlist series called du du ke. They both have really interesting taste in music so each playlist is an experience. This is the very first one.
+  source: Spotify
+  id: 0kHqHF8XtLeafT687seexx
+- name: Mipo
+  image: assets/images/playlists/mipo.jpeg
+  about: Every now and again, Tade and I exchange music. This is the first batch of songs he shared. Mr. Policeman was a fun discovery.
+  source: Apple Music
+  id: pl.u-kv9lbZls4JlWEr
+- name: Interesting History
+  image: assets/images/playlists/interesting-history.jpeg
+  about: One night in uni, I woke up and Zombie by The Cranberries was playing in my head. I walked quite a distance in the middle of the night just to get internet to find the song. And I did! This is a curation of similar songs from strangers on Twitter, songs with an interesting history.
+  source: Spotify
+  id: 3UmkA7vBiWWJfGn4lXN4fp
+- name: Merry 🎊
+  image: assets/images/playlists/merry.jpeg
+  about: Tomiwa's playlist is mostly South African House and a great follow-up to Dolapo's below. It's adulterated with a few Naija songs, but in a good way.
+  source: Apple Music
+  id: pl.u-aZb0gP5sPlK1bYz
+- name: better late than never x 🇿🇦 🏠
+  image: assets/images/playlists/better-late.jpeg
+  about: Dolapo really took her time to send me this one, thus the name 😂. It's my humble 30-minute introduction to South African house.
+  source: Apple Music
+  id: pl.u-mRJDuzZ92g9
+- name: drop.top
+  image: assets/images/playlists/drop.top.jpeg
+  about: This playlist is dedicated to Jubril's 335. When you listen to it, imagine you're in a BMW convertible, top down, driving fast on Bourdillon. If you can re-enact it, even better.
+  source: Spotify
+  id: 4OEtbtlwtT4M03v0kZOGT1
+- name: Jerry
+  image: assets/images/playlists/jerry.jpeg
+  about: This was my first ever playlist-as-a-gift. It put me on to a lot of new music and brought me out of a long, boring electronic music phase. After this, I made it a habit to ask friends for playlists.
+  source: Spotify
+  id: 5GwXqSCHgaqjEtgmQb5S6v

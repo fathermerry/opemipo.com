@@ -1,0 +1,9 @@
+article {
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 600px) {
+  article {
+    margin-bottom: 40px;
+  }
+}
